@@ -1,0 +1,235 @@
+/* Geral */
+#frame-Perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 950px;
+}
+
+#richardPhoto {
+    padding-block: 20px;
+    max-width: 250px;
+}
+
+#profile-photo-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content-perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#bottomLinesFrame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 0;
+    width: 100%;
+}
+
+#darkSquare-perfil{
+    position: absolute;
+    display: flex;
+    height: 410px;
+    width: 600px;
+    transform: translate(-5%, 0%);
+    top: -20px;
+
+    z-index: -1;
+    background-color: black;
+}
+
+#DarkSquare-Perfil {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+#DarkSquare-Perfil p {
+    color: #C8C8C8;
+}
+
+#bottomLinesFrame img {
+    max-width: 20%;
+}
+
+#MolduraInferior {
+    display: flex;
+    flex-direction: row;
+}
+
+#MySign {
+    padding-inline: 15px;
+}
+
+#teste {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.title {
+    font-size: 33px;
+}
+
+.description {
+    font-size: 16px;
+}
+
+
+/*****************************************************************/
+
+/* Media Queries */
+@media (max-width: 799px) {
+    #frame-Perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    #DarkSquare-Perfil {
+        text-align: center;
+        width: 100%;
+    }
+
+    #content-perfil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #darkSquare-perfil{
+        display: none;
+    }
+
+    #richardPhoto {
+        padding-block: 0;
+        padding: 10px;
+        border: 1px solid white;
+        max-width: 250px;
+    }
+
+    #bottomLinesFrame {
+        justify-content: center;
+        height: auto;
+    }
+
+    #bottomLinesFrame img {
+        max-width: 170px;
+
+    }
+
+    #MySign {
+        padding-inline: 0;
+        padding-block: 20px;
+    }
+
+    #profile-photo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frameLine {
+        display: none;
+    }
+
+    .title {
+        font-size: 25px;
+        padding-block: 10px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    #frame-Perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    #DarkSquare-Perfil {
+        width: 100%;
+    }
+
+    #content-perfil {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #richardPhoto {
+        padding-block: 0;
+        padding: 10px;
+        border: 1px solid white;
+        max-width: 250px;
+    }
+
+    #darkSquare-perfil{
+        display: none;
+    }
+
+    #bottomLinesFrame {
+        justify-content: end;
+        height: auto;
+    }
+
+    #bottomLinesFrame img {
+        max-width: 170px;
+
+    }
+
+    #MySign {
+        padding-inline: 0;
+        padding-block: 20px;
+    }
+
+    #profile-photo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frameLine {
+        display: none;
+    }
+
+    .title {
+        font-size: 30px;
+        padding-block: 10px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .title {
+        font-size: 33px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
