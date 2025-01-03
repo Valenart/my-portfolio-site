@@ -1,4 +1,8 @@
-frame-networking {
+#main-networking {
+    width: 950px;
+}
+
+#frame-networking {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,13 +80,18 @@ frame-networking {
     width: 440px;
     transform: translate(4%, -1%);
     top: -20px;
-
     z-index: -1;
     background-color: black;
 }
 
 /***********************************/
+/***********************************/
+/***********************************/
 @media (min-width: 800px) and (max-width: 1024px) {
+    #main-networking {
+        width: 90vw;
+    }
+
     #frame-networking {
         display: flex;
         justify-content: center;
@@ -96,7 +105,7 @@ frame-networking {
     }
 
     #containerTexts-networking {
-        width: 400px;
+        width: 40vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -108,16 +117,24 @@ frame-networking {
 }
 
 @media (max-width: 799px) {
+    #main-networking {
+        width: 90vw;
+    }
+
+    #frame-networking {
+        width: 90vw
+    }
+
     #content-networking {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        /*width: 90vw;*/
+
     }
 
     #containerTexts-networking {
-        /*width: 80vw;*/
+        width: 80vw;
         display: flex;
         text-align: center;
         flex-direction: column;
@@ -129,14 +146,14 @@ frame-networking {
         margin-inline: 5vw;
         border-radius: 2px;
         margin-block: 10px;
-        /*width: 25vw;*/
+        width: 25vw;
     }
 
     .normalImage-networking {
         margin-inline: 1vw;
         margin-block: 10px;
         border-radius: 2px;
-        /*width: 22vw;*/
+        width: 22vw;
     }
 
     #darkSquare-networking {

@@ -3,6 +3,8 @@ import Networking from "./Networking/networking";
 import FramerMotion from "./Certifications/framerMotion";
 import {useEffect, useState} from "react";
 
+import './homePage.css';
+
 function Home() {
 
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1024);
@@ -13,7 +15,7 @@ function Home() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
     return (
-        <main >
+        <main id="home">
                 <Perfil/>
                 <br></br>
                 <br></br>

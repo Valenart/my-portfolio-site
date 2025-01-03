@@ -41,7 +41,7 @@ export default function Networking() {
     }, []);
 
     return (
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '950px', alignItems:'center'}}>
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}} id='main-networking'>
 
             <div id="frame-networking"
                  data-aos="fade-up"

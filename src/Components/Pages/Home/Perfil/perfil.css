@@ -101,6 +101,10 @@
 
 /* Media Queries */
 @media (max-width: 799px) {
+    #main-perfil {
+        width: 90vw;
+    }
+
     #frame-Perfil {
         display: flex;
         flex-direction: column;
@@ -174,12 +178,16 @@
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
+    #main-perfil {
+        width: 90vw;
+    }
+
     #frame-Perfil {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80vw;
+        width: 90vw;
         overflow: hidden;
     }
 
