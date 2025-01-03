@@ -1,0 +1,191 @@
+#main-footer {
+    border-top: 1px solid #737373;
+    height: 250px;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#iconsContainer-footer, #containerMiddle-footer, #containerContact-footer {
+    display: flex;
+}
+
+#containerMiddle-footer {
+    position: relative;
+    transform: translate(-6em, 0em);
+    color: #b3b3b3;
+    font-size: 13px;
+    font-weight: 200;
+    font-style: italic;
+    align-items: center;
+    flex-direction: column;
+}
+
+#containerContact-footer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+#containerContact-footer ul li {
+    display: flex;
+    list-style-type: none;
+    color: #c8c8c8;
+    font-size: 13px;
+}
+
+#containerContact-footer li {
+    margin-block: 5px;
+    align-items: center;
+}
+
+#containerContact-footer p {
+    font-weight: 200;
+    font-size: 10px;
+}
+
+#divButton-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#iconsContainer-footer ul li{
+    color: #c8c8c8;
+    letter-spacing: 1px;
+    font-size: 13px;
+    list-style-type: none;
+}
+
+#iconsContainer-footer li {
+    margin-block: 5px;
+}
+
+#iconsContainer-footer {
+    width: 20%;
+    justify-content: center;
+    margin-inline: 5vw;
+    flex-direction: column;
+}
+
+#divIcons-footer {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+}
+
+#mylogo {
+    width: 50px;
+}
+
+#mySign-footer {
+    margin-block: 20px;
+    width: 150px;
+}
+
+/**************************************/
+/**************************************/
+/**************************************/
+@media (max-width: 799px) {
+    #main-footer {
+        border-top: 1px solid #737373;
+        height: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .iconsContact {
+        display: none;
+    }
+
+    #iconsContainer-footer ul li{
+        align-items: center;
+        font-size: 11px;
+    }
+
+    #containerContact-footer p {
+        display: none;
+    }
+
+    #mylogo {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    #main-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #divIcons-footer {
+        justify-content: center;
+    }
+
+    #iconsContainer-footer ul li{
+        text-align: center;
+    }
+
+    #mySign-footer {
+        display: none;
+    }
+    #iconsContainer-footer {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #containerContact-footer ul li {
+        display: none;
+    }
+    #containerContact-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #mySign-footer {
+        display: flex;
+    }
+}
+
+@media (max-width: 620px) {
+
+}
+/**************************************/
+/**************************************/
+/**************************************/
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    #main-footer {
+        border-top: 1px solid #737373;
+        height: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #containerContact-footer p {
+        display: none;
+    }
+
+    #iconsContainer-footer {
+        width: 40%;
+        justify-content: center;
+        margin-inline: 0;
+        flex-direction: column;
+    }
+
+    #mylogo {
+        display: none;
+    }
+}

@@ -1,17 +1,16 @@
+/*IMPORT IMAGES AND COMPONENTS*/
 import LinhaHorizontal from "../../../GlobalComponents/Components Perfil/LinhaHorizontal/linhaHorizontalMoldura";
 import LinhaVertical from "../../../GlobalComponents/Components Perfil/Linha Vertical/LinhaVerticalMoldura";
-import { IconName } from "react-icons/di";
-import { FaLinkedin } from "react-icons/fa";
-import AOS from 'aos';
-import React, { useState, useEffect } from 'react';
-
-/*IMPORT PHOTOS*/
 import LogoCasaOracle from '../../../../Assets/Images/PerfilENetworking/LogoCasaOracle.jpeg'
 import OraclePhoto1 from '../../../../Assets/Images/PerfilENetworking/OracleOffice1.jpeg'
 import OraclePhoto2 from '../../../../Assets/Images/PerfilENetworking/OracleOffice2.jpeg'
 import PowerBISENAI from '../../../../Assets/Images/PerfilENetworking/PowerBISENAI.jpeg'
 import VivoMeet from '../../../../Assets/Images/PerfilENetworking/VivoMeetPhoto.jpeg'
 import VivoPhotoOnLogo from '../../../../Assets/Images/PerfilENetworking/VivoPhoto.jpeg'
+
+/*LIBRARIES REACT IMPORTS*/
+import AOS from 'aos';
+import React, { useState, useEffect } from 'react';
 
 /*IMPORT CSS*/
 import './networking.css';
@@ -30,7 +29,7 @@ export default function Networking() {
         AOS.refresh();
     }, []);
 
-
+    /*************************************************/
 
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1024);
 
@@ -39,6 +38,8 @@ export default function Networking() {
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    /*************************************************/
 
     return (
         <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}} id='main-networking'>

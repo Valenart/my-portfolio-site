@@ -1,14 +1,15 @@
-/*IMPORT COMPONENTS*/
+/*IMPORT IMAGES AND COMPONENTS*/
 import LinhaHorizontal from "../../../GlobalComponents/Components Perfil/LinhaHorizontal/linhaHorizontalMoldura";
 import LinhaVertical from "../../../GlobalComponents/Components Perfil/Linha Vertical/LinhaVerticalMoldura";
-import AOS from 'aos';
-import React, { useState, useEffect } from 'react';
-
-/*IMAGE IMPORT*/
 import RichardPerfil from "../../../../Assets/Images/PerfilENetworking/RichardPhotoPerfil.jpg";
 import MySign from "../../../../Assets/Png/MySign/MySignWhite.png"
 import myResume from "../../../../Assets/PDF/Richard Valentim da Silva.pdf"
 
+/*LIBRARIES REACT IMPORTS*/
+import AOS from 'aos';
+import React, { useState, useEffect } from 'react';
+
+/*IMPORT CSS*/
 import "./perfil.css"
 import 'aos/dist/aos.css';
 
