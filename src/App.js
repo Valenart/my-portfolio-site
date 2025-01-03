@@ -1,31 +1,11 @@
 import './App.css';
-import Perfil from "../src/Components/Pages/Home/Perfil/perfil";
-import LinhaVerticalMoldura from "./Components/Pages/Home/Perfil/Components Perfil/Linha Vertical/LinhaVerticalMoldura";
+import HomePage from './Components/Pages/Home/homePage';
+import LinhaVerticalMoldura from "./Components/GlobalComponents/Components Perfil/Linha Vertical/LinhaVerticalMoldura";
 
 function App() {
   return (
       <div className="App">
-          <br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br>
-          <br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br><br></br>
-          <br></br>
-          <Perfil/>
+          <HomePage/>
       </div>
 
   );

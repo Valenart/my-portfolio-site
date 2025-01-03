@@ -1,9 +1,9 @@
-import "./LinhaHorizontalMoldura.css";
 
-const LinhaHorizontalMoldura = ({ rotationLine = 'none', divWidth = '100%'}) => {
+
+const LinhaHorizontalMoldura = ({ rotationLine = 'none', divWidth = '100%', widthLine = "100%"}) => {
 
     const lineStyles = {
-        width: `100%`,
+        width: widthLine,
         height: '100%',
         background: '#ffffff',
     };

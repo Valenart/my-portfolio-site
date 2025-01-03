@@ -1,0 +1,161 @@
+frame-networking {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 950px;
+}
+
+#content-networking {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*********CONTAINER TEXTS*********/
+#containerTexts-networking {
+    margin-inline: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*********BUTTONS*********/
+.linkedInbutton-networking {
+    font-size: 30px;
+    margin-inline: 5px;
+    color: #272727;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+/*********CONTAINER PHOTOS*********/
+#photosContainer-networking {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#photoColumn1-networking, #photoColumn2-networking {
+    margin: 20px 15px;
+    display: grid;
+    flex-direction: column;
+}
+
+#photoColumn1-networking {
+
+}
+
+#photoColumn2-networking {
+
+}
+
+.framesPhotos-networking {
+
+}
+
+.smallImage-networking {
+    border-radius: 2px;
+    margin-block: 10px;
+    width: 150px;
+}
+
+.normalImage-networking {
+    border-radius: 2px;
+    width: 150px;
+}
+
+/*********BLACK SQUARE PHOTOS*********/
+#darkSquare-networking{
+    position: absolute;
+    display: flex;
+    height: 590px;
+    width: 440px;
+    transform: translate(4%, -1%);
+    top: -20px;
+
+    z-index: -1;
+    background-color: black;
+}
+
+/***********************************/
+@media (min-width: 800px) and (max-width: 1024px) {
+    #frame-networking {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+    }
+
+    #content-networking {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #containerTexts-networking {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #darkSquare-networking {
+        display: none;
+    }
+}
+
+@media (max-width: 799px) {
+    #content-networking {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /*width: 90vw;*/
+    }
+
+    #containerTexts-networking {
+        /*width: 80vw;*/
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .smallImage-networking {
+        margin-inline: 5vw;
+        border-radius: 2px;
+        margin-block: 10px;
+        /*width: 25vw;*/
+    }
+
+    .normalImage-networking {
+        margin-inline: 1vw;
+        margin-block: 10px;
+        border-radius: 2px;
+        /*width: 22vw;*/
+    }
+
+    #darkSquare-networking {
+        display: none;
+    }
+
+    #photosContainer-networking {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #photoColumn1-networking, #photoColumn2-networking {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

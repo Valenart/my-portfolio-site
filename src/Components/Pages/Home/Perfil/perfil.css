@@ -7,9 +7,15 @@
     width: 950px;
 }
 
+#content-perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 #richardPhoto {
     padding-block: 20px;
-    max-width: 250px;
+    max-width: 280px;
 }
 
 #profile-photo-container {
@@ -19,11 +25,7 @@
     align-items: center;
 }
 
-#content-perfil {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 
 #bottomLinesFrame {
     display: flex;
@@ -36,7 +38,7 @@
 #darkSquare-perfil{
     position: absolute;
     display: flex;
-    height: 410px;
+    height: 445px;
     width: 600px;
     transform: translate(-5%, 0%);
     top: -20px;
@@ -45,19 +47,16 @@
     background-color: black;
 }
 
-#DarkSquare-Perfil {
+#squarePerfil {
     display: flex;
     flex-direction: column;
     width: 50%;
     height: 100%;
 }
 
-#DarkSquare-Perfil p {
-    color: #C8C8C8;
-}
 
 #bottomLinesFrame img {
-    max-width: 20%;
+    max-width: 150px;
 }
 
 #MolduraInferior {
@@ -65,15 +64,10 @@
     flex-direction: row;
 }
 
-#MySign {
+#mySign-perfil {
     padding-inline: 15px;
 }
 
-#teste {
-    width: 100px;
-    height: 100px;
-    background-color: black;
-}
 
 .title {
     font-size: 33px;
@@ -81,8 +75,27 @@
 
 .description {
     font-size: 16px;
+    color: #C8C8C8;
 }
 
+#buttons {
+    display: flex;
+    border: 1px solid #fff;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    margin-block: 15px;
+    font-weight: 600;
+    background: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#buttons:hover {
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+   background: white;
+    color: black;
+}
 
 /*****************************************************************/
 
@@ -97,7 +110,10 @@
         overflow: hidden;
     }
 
-    #DarkSquare-Perfil {
+    #squarePerfil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         text-align: center;
         width: 100%;
     }
@@ -117,7 +133,7 @@
         padding-block: 0;
         padding: 10px;
         border: 1px solid white;
-        max-width: 250px;
+        max-width: 180px;
     }
 
     #bottomLinesFrame {
@@ -130,7 +146,7 @@
 
     }
 
-    #MySign {
+    #mysign-perfil {
         padding-inline: 0;
         padding-block: 20px;
     }
@@ -154,6 +170,7 @@
     .description {
         font-size: 14px;
     }
+
 }
 
 @media (min-width: 800px) and (max-width: 1024px) {
@@ -166,7 +183,7 @@
         overflow: hidden;
     }
 
-    #DarkSquare-Perfil {
+    #squarePerfil {
         width: 100%;
     }
 
@@ -189,16 +206,12 @@
     }
 
     #bottomLinesFrame {
-        justify-content: end;
+        justify-content: center;
         height: auto;
     }
 
-    #bottomLinesFrame img {
+    #mysign-perfil {
         max-width: 170px;
-
-    }
-
-    #MySign {
         padding-inline: 0;
         padding-block: 20px;
     }
@@ -228,6 +241,8 @@
     .title {
         font-size: 33px;
     }
+
+
 
     .description {
         font-size: 16px;

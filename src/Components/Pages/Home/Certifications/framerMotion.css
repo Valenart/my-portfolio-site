@@ -1,0 +1,9 @@
+.parallax .scroller {
+    width: 100vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 64px;
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}

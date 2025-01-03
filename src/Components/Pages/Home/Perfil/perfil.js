@@ -1,21 +1,19 @@
 /*IMPORT COMPONENTS*/
-import LinhaHorizontal from "./Components Perfil/LinhaHorizontal/LinhaHorizontalMoldura";
-import LinhaVertical from "./Components Perfil/Linha Vertical/LinhaVerticalMoldura";
+import LinhaHorizontal from "../../../GlobalComponents/Components Perfil/LinhaHorizontal/linhaHorizontalMoldura";
+import LinhaVertical from "../../../GlobalComponents/Components Perfil/Linha Vertical/LinhaVerticalMoldura";
 import AOS from 'aos';
 import React, { useState, useEffect } from 'react';
-import {Button} from "@mui/material";
 
 /*IMAGE IMPORT*/
 import RichardPerfil from "../../../../Assets/Images/PerfilENetworking/RichardPhotoPerfil.jpg";
 import MySign from "../../../../Assets/Png/MySign/MySignWhite.png"
+import myResume from "../../../../Assets/PDF/Richard Valentim da Silva.pdf"
 
 import "./perfil.css"
 import 'aos/dist/aos.css';
 
 
 function Perfil() {
-
-    AOS.init();
 
     useEffect(() => {
 
@@ -28,6 +26,8 @@ function Perfil() {
         AOS.refresh();
     }, []);
 
+    /*************************************************/
+
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1024);
 
     useEffect(() => {
@@ -36,8 +36,18 @@ function Perfil() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    /*************************************************/
+
+    const myCV = '../../../../Assets/PDF/Richard Valentim da Silva.pdf'
+
+    const handleButtonClick = () => {
+        window.open(myCV, '_blank')
+    }
+
+    /*************************************************/
+
     return (
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent:'center'}}>
+        <div style={{display: 'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center'}}>
 
             <div id="frame-Perfil"
                  data-aos="fade-up"
@@ -61,8 +71,15 @@ function Perfil() {
                         </img>
                     </div>
 
-                    <div id="DarkSquare-Perfil" >
-                        <h1 className="title">Escrevendo o meu futuro em designs e código.</h1>
+                    <div id="squarePerfil">
+                        <h1 className="title"
+                            data-aos="fade"
+                            data-aos-delay="500"
+                            data-aos-duration="1000"
+                            data-aos-easing="ease-out">
+                            Escrevendo o meu futuro em designs e código.
+                        </h1>
+
                         <p className="description"
                            data-aos="fade"
                            data-aos-delay="1000"
@@ -70,7 +87,9 @@ function Perfil() {
                            data-aos-easing="ease-out">
                             Olá, Sou Richard Valentim da Silva, Desenvolvedor Full-stack.
                         </p>
+
                         <br/>
+
                         <p className="description"
                            data-aos="fade"
                            data-aos-delay="1500"
@@ -86,16 +105,21 @@ function Perfil() {
                             espanhol.
                         </p>
 
+                        <button id="buttons"
+                                data-aos="fade"
+                                data-aos-delay="1500"
+                                data-aos-duration="1000"
+                                data-aos-easing="ease-out">Meu resumo</button>
                         <div id="darkSquare-perfil"></div>
                     </div>
 
 
-                    {!isSmallScreen && <LinhaVertical intervalTime={0} />}
+                    {!isSmallScreen && <LinhaVertical intervalTime={0}/>}
                 </div>
 
                 <div id='bottomLinesFrame'>
-                    {!isSmallScreen && <LinhaHorizontal />}
-                    <img alt={"PNG Minha Assinatura"} src={MySign} id="MySign"
+                    {!isSmallScreen && <LinhaHorizontal/>}
+                    <img alt={"PNG Minha Assinatura"} src={MySign} id="mySign-perfil"
                          data-aos="zoom-out"
                          data-aos-duration="1000"
                          data-aos-delay="400">
