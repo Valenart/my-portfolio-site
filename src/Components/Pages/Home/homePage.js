@@ -1,10 +1,12 @@
 /*IMPORT IMAGES AND COMPONENTS*/
-import Perfil from './Perfil/perfil';
-import Networking from "./Networking/networking";
-import Footer from "./Footer/footer";
+import Perfil from './HomeComponents/Perfil/perfil';
+import Networking from "./HomeComponents/Networking/networking";
+import Footer from "./HomeComponents/Footer/footer";
+import Certificacao from "./HomeComponents/Certifications/certificacoes";
+
 
 /*LIBRARIES REACT IMPORTS*/
-import FramerMotion from "./Certifications/framerMotion";
+import FramerMotion from "./HomeComponents/Certifications/Scroll Motion/framerMotion";
 import {useEffect, useState} from "react";
 
 /*IMPORT CSS*/
@@ -25,7 +27,6 @@ function Home() {
 
     return (
         <main id="home">
-            <h1 className="titleContent-Home">Sobre mim</h1>
             <br></br>
             <br></br>
             <br></br>
@@ -40,7 +41,19 @@ function Home() {
             <br></br>
             <br></br>
             <br></br>
-            <h1 className="titleContent-Home">NETWORKING</h1>
+            <h1 className="titleContent-Home">HABILIDADES</h1>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <h1 className="titleContent-Home">CERTIFICAÇÕES</h1>
+            <Certificacao/>
+            {!isSmallScreen && <FramerMotion/>}
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
             <br></br>
             <br></br>
             <br></br>

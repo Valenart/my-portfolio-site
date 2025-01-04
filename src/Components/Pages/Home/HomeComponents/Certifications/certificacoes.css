@@ -1,0 +1,23 @@
+#main-certifications {
+    width: 950px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#containerCert-certifications {
+    display: flex;
+    flex-direction: column;
+}
+
+#div1-certifications, #div2-certifications, #div3-certifications {
+    display: flex;
+    flex-direction: row;
+}
+
+.certImages-certfications {
+    height: 150px;
+    margin: 10px;
+    object-fit: cover;
+}

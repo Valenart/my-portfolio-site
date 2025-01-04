@@ -1,0 +1,259 @@
+/* Geral */
+#frame-Perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 950px;
+}
+
+#content-perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#richardPhoto {
+    padding-block: 20px;
+    max-width: 280px;
+}
+
+#profile-photo-container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#bottomLinesFrame {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 0;
+    width: 100%;
+}
+
+#darkSquare-perfil{
+    position: absolute;
+    display: flex;
+    height: 445px;
+    width: 600px;
+    transform: translate(-5%, 0%);
+    top: -20px;
+
+    z-index: -1;
+    background-color: black;
+}
+
+#squarePerfil {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+
+#bottomLinesFrame img {
+    max-width: 150px;
+}
+
+#MolduraInferior {
+    display: flex;
+    flex-direction: row;
+}
+
+#mySign-perfil {
+    padding-inline: 15px;
+}
+
+
+.title {
+    font-size: 33px;
+}
+
+.description {
+    font-size: 16px;
+    color: #C8C8C8;
+}
+
+.buttons {
+    display: flex;
+    border: 1px solid #fff;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    padding: 10px;
+    margin-block: 15px;
+    font-weight: 600;
+    background: none;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.buttons:hover {
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+   background: white;
+    color: black;
+}
+
+/*****************************************************************/
+
+/* Media Queries */
+@media (max-width: 799px) {
+    #main-perfil {
+        width: 90vw;
+    }
+
+    #frame-Perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80vw;
+        overflow: hidden;
+    }
+
+    #squarePerfil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    #content-perfil {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #darkSquare-perfil{
+        display: none;
+    }
+
+    #richardPhoto {
+        padding-block: 0;
+        padding: 10px;
+        border: 1px solid white;
+        max-width: 180px;
+    }
+
+    #bottomLinesFrame {
+        justify-content: center;
+        height: auto;
+    }
+
+    #bottomLinesFrame img {
+        max-width: 170px;
+
+    }
+
+    #mysign-perfil {
+        padding-inline: 0;
+        padding-block: 20px;
+    }
+
+    #profile-photo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frameLine {
+        display: none;
+    }
+
+    .title {
+        font-size: 25px;
+        padding-block: 10px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+    #main-perfil {
+        width: 90vw;
+    }
+
+    #frame-Perfil {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        overflow: hidden;
+    }
+
+    #squarePerfil {
+        width: 100%;
+    }
+
+    #content-perfil {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #richardPhoto {
+        padding-block: 0;
+        padding: 10px;
+        border: 1px solid white;
+        max-width: 250px;
+    }
+
+    #darkSquare-perfil{
+        display: none;
+    }
+
+    #bottomLinesFrame {
+        justify-content: center;
+        height: auto;
+    }
+
+    #mysign-perfil {
+        max-width: 170px;
+        padding-inline: 0;
+        padding-block: 20px;
+    }
+
+    #profile-photo-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .frameLine {
+        display: none;
+    }
+
+    .title {
+        font-size: 30px;
+        padding-block: 10px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .title {
+        font-size: 33px;
+    }
+
+
+
+    .description {
+        font-size: 16px;
+    }
+}

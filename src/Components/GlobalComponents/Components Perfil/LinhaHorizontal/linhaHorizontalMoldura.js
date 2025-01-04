@@ -9,7 +9,7 @@ const LinhaHorizontalMoldura = ({ rotationLine = 'none', divWidth = '100%', widt
     };
 
     return (
-        <div style={{ width: `${divWidth}`, height: '2px', transform: `${rotationLine}`, alignItems: 'flex-end', overflow:'visible' }}>
+        <div style={{ width: `${divWidth}`, height: '1px', transform: `${rotationLine}`, alignItems: 'flex-end', overflow:'visible' }}>
             <div style={lineStyles}></div>
         </div>
     );

@@ -3,7 +3,7 @@
 const LinhaVerticalMoldura = ({heightLine = '398px'}) => {
 
     const lineStyles = {
-        width: '2px',
+        width: '1px',
         height: heightLine,
         background: '#ffffff',
     };
