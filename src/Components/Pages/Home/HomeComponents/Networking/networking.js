@@ -69,7 +69,7 @@ export default function Networking() {
                            data-aos="fade"
                            data-aos-delay="1000"
                            data-aos-duration="700"
-                           data-aos-easing="ease-out">
+                           data-aos-easing="ease-out" style={{marginBlock:'20px'}}>
                             Palestras, visitas técnicas e cursos representam uma parte significativa da minha
                             trajetória acadêmica e profissional. Durante meu período na faculdade, essas experiências
                             não apenas ampliaram meu conhecimento, mas também foram oportunidades valiosas para

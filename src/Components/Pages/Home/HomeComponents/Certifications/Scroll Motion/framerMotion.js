@@ -1,15 +1,6 @@
 // noinspection JSValidateTypes
 
-import BradescoLogo from '../../../../../../Assets/Png/Icons/Banco.png';
-import AWSLogo from '../../../../../../Assets/Png/Icons/Amazon_Web_Services_Logo.svg.png';
-import CiscoLogo from '../../../../../../Assets/Png/Icons/cisco.png';
-import CourseraLogo from '../../../../../../Assets/Png/Icons/coursera.png';
-import SenaiLogo from '../../../../../../Assets/Png/Icons/download.png';
-import FiapLogo from '../../../../../../Assets/Png/Icons/FIAP-Apoiador (1).png';
-import GoogleLogo from '../../../../../../Assets/Png/Icons/google.png';
-import MetaLogo from '../../../../../../Assets/Png/Icons/meta-platforms-inc-4096 (2).png';
-import SantanderLogo from '../../../../../../Assets/Png/Icons/santander.png';
-import MicrosoftLogo from '../../../../../../Assets/Png/Icons/logo-microsoft-4096 (1).png';
+
 
 /**/
 import "./framerMotion.css";
@@ -71,16 +62,6 @@ export default function FramerMotion() {
         <section>
             {/* Substituímos texto por imagens */}
             <ParallaxText baseVelocity={0.5} className="teste1">
-                <img src={AWSLogo} style={{height:'50px',paddingInline:'16px',filter:'brightness(0.8)',}}></img>
-                <img src={GoogleLogo} style={{height:'50px',paddingInline:'15px',filter:'brightness(0.8)'}}></img>
-                <img src={MetaLogo} style={{height:'40px',paddingInline:'16px',filter:'brightness(0.8)'}}></img>
-                <img src={BradescoLogo} style={{height:'50px',paddingInline:'15px',filter:'brightness(0.8)'}}></img>
-                <img src={FiapLogo} style={{height:'30px',paddingInline:'16px',filter:'brightness(0.8)'}}></img>
-                <img src={SantanderLogo} style={{height:'40px',paddingInline:'16px',filter:'brightness(0.8)'}}></img>
-                <img src={MicrosoftLogo} style={{height:'40px',paddingInline:'16px',filter:'brightness(0.8)'}}></img>
-                <img src={SenaiLogo} style={{height:'40px',paddingInline:'15px',filter:'brightness(0.8)'}}></img>
-                <img src={CiscoLogo} style={{height:'60px',paddingInline:'15px',filter:'brightness(0.8)'}}></img>
-                <img src={CourseraLogo} style={{height:'30px',paddingInline:'15px',filter:'brightness(0.8)'}}></img>
             </ParallaxText>
         </section>
     );

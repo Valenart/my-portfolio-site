@@ -1,13 +1,25 @@
 #main-certifications {
-    width: 950px;
-    height: 500px;
+    width: 80vw;
+    height: 600px;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+}
+
+#containerText-certifications {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#titleText-certifications {
+    font-size: 45px;
 }
 
 #containerCert-certifications {
     display: flex;
+    width: 40%;
     flex-direction: column;
 }
 
@@ -16,8 +28,101 @@
     flex-direction: row;
 }
 
+.Logotext-certifications {
+    height: 50px;
+    width: 120px;
+    object-fit: contain;
+}
+
 .certImages-certfications {
-    height: 150px;
+    height: 160px;
     margin: 10px;
+    aspect-ratio: 1.29;
     object-fit: cover;
+}
+
+/*********BLACK SQUARE PHOTOS*********/
+#darkSquare-certifications {
+    position: absolute;
+    display: flex;
+    height: 590px;
+    width: 650px;
+    transform: translate(4%, -1%);
+    left: 20px;
+    z-index: -2;
+    background-color: black;
+}
+
+/*******************************/
+@media (max-width: 1600px) {
+    #titleText-certifications {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 1422px) {
+    #main-certifications {
+        width: 90vw;
+    }
+
+    #containerText-certifications {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1370px) {
+    #div1-certifications img, #div2-certifications img, #div3-certifications img{
+        object-fit: contain;
+        width: 90%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #titleText-certifications {
+        font-size: 35px;
+    }
+
+    #div1-certifications img, #div2-certifications img, #div3-certifications img{
+        object-fit: contain;
+        width: 90%;
+    }
+
+    #main-certifications {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 799px) {
+    #main-certifications {
+        width: 96vw;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #containerText-certifications {
+        width: 80%;
+    }
+
+    #containerCert-certifications {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #titleText-certifications {
+        font-size: 27px;
+        margin-block: 20px;
+    }
+
+    #div1-certifications, #div2-certifications, #div3-certifications{
+        width: 100%;
+        height: 20vw;
+        margin-block: 5px;
+        justify-content: space-evenly;
+    }
+
+    #div1-certifications img, #div2-certifications img, #div3-certifications img{
+        margin-inline: 0;
+        width: 100%;
+    }
 }

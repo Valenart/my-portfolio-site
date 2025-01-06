@@ -38,7 +38,7 @@
 #darkSquare-perfil{
     position: absolute;
     display: flex;
-    height: 445px;
+    height: 525px;
     width: 600px;
     transform: translate(-5%, 0%);
     top: -20px;
@@ -70,7 +70,7 @@
 
 
 .title {
-    font-size: 33px;
+    font-size: 800px;
 }
 
 .description {
@@ -248,7 +248,7 @@
 
 @media (min-width: 1025px) {
     .title {
-        font-size: 33px;
+        font-size: 38px;
     }
 
 

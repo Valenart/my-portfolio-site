@@ -58,7 +58,7 @@ function Perfil() {
                 {!isSmallScreen && <LinhaHorizontal />}
 
                 <div id="content-perfil">
-                    {!isSmallScreen && <LinhaVertical intervalTime={0} />}
+                    {!isSmallScreen && <LinhaVertical intervalTime={0} heightLine={"479px"}/>}
 
                     <div id="profile-photo-container">
                         <img alt={"Richard Foto"} src={RichardPerfil} id="richardPhoto"
@@ -79,6 +79,8 @@ function Perfil() {
                             Escrevendo o meu futuro em designs e código.
                         </h1>
 
+                        <br/>
+
                         <p className="description"
                            data-aos="fade"
                            data-aos-delay="1000"
@@ -86,8 +88,6 @@ function Perfil() {
                            data-aos-easing="ease-out">
                             Olá, Sou Richard Valentim da Silva, Desenvolvedor Full-stack.
                         </p>
-
-                        <br/>
 
                         <p className="description"
                            data-aos="fade"
@@ -104,13 +104,14 @@ function Perfil() {
                             espanhol.
                         </p>
 
-                        <button className="buttons" onClick={handleButtonClick}>
-                            Meu resumo</button>
+                        <button className="buttons" onClick={handleButtonClick} style={{marginBlock:"20px"}}>
+                            Meu resumo
+                        </button>
                         <div id="darkSquare-perfil"></div>
                     </div>
 
 
-                    {!isSmallScreen && <LinhaVertical intervalTime={0}/>}
+                    {!isSmallScreen && <LinhaVertical intervalTime={0} heightLine={"479px"}/>}
                 </div>
 
                 <div id='bottomLinesFrame'>
