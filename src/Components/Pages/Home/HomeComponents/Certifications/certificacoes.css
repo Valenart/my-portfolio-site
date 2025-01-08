@@ -1,6 +1,6 @@
 #main-certifications {
     width: 80vw;
-    height: 600px;
+    height: 560px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -15,6 +15,7 @@
 
 #titleText-certifications {
     font-size: 45px;
+    color: white;
 }
 
 #containerCert-certifications {
@@ -35,10 +36,10 @@
 }
 
 .certImages-certfications {
-    height: 160px;
-    margin: 10px;
+    width: 130%;
+    height: 180px;
     aspect-ratio: 1.29;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /*********BLACK SQUARE PHOTOS*********/
@@ -46,9 +47,9 @@
     position: absolute;
     display: flex;
     height: 590px;
-    width: 650px;
+    width: clamp(200px, 40vw, 700px);
     transform: translate(4%, -1%);
-    left: 20px;
+    left: -10px;
     z-index: -2;
     background-color: black;
 }
@@ -61,12 +62,19 @@
 }
 
 @media (max-width: 1422px) {
+    #darkSquare-certifications {
+        width: clamp(200px, 48vw, 700px);
+    }
+}
+
+@media (max-width: 1422px) {
     #main-certifications {
-        width: 90vw;
+        width: 95vw;
+        justify-content: space-evenly;
     }
 
     #containerText-certifications {
-        width: 50%;
+        width: 43%;
     }
 }
 
@@ -77,9 +85,28 @@
     }
 }
 
+@media (max-width: 1130px) {
+    #main-certifications {
+        width: 95vw;
+        justify-content: space-evenly;
+    }
+
+    #div1-certifications, #div2-certifications, #div3-certifications{
+        object-fit: contain;
+    }
+}
+
 @media (max-width: 1024px) {
     #titleText-certifications {
         font-size: 35px;
+    }
+
+    #containerCert-certifications {
+        width: 45%;
+    }
+
+    #darkSquare-certifications {
+        display: none;
     }
 
     #div1-certifications img, #div2-certifications img, #div3-certifications img{
@@ -105,7 +132,8 @@
 
     #containerCert-certifications {
         display: flex;
-        width: 100%;
+        width: 80%;
+        align-items: center;
         flex-direction: column;
     }
 
@@ -115,14 +143,18 @@
     }
 
     #div1-certifications, #div2-certifications, #div3-certifications{
-        width: 100%;
+        width: 50vw;
         height: 20vw;
         margin-block: 5px;
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+
+    #div1-certifications a, #div2-certifications a, #div3-certifications a{
+        display: inline-flex;
+        width: 100%;
     }
 
     #div1-certifications img, #div2-certifications img, #div3-certifications img{
-        margin-inline: 0;
-        width: 100%;
+        height: auto;
     }
 }

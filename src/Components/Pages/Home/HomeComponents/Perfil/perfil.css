@@ -39,7 +39,7 @@
     position: absolute;
     display: flex;
     height: 525px;
-    width: 600px;
+    width: 595px;
     transform: translate(-5%, 0%);
     top: -20px;
 
@@ -71,6 +71,7 @@
 
 .title {
     font-size: 800px;
+    color: white;
 }
 
 .description {

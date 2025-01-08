@@ -2,9 +2,9 @@
 
 import LinhaHorizontal from "../../../../GlobalComponents/Components Perfil/LinhaHorizontal/linhaHorizontalMoldura";
 import LinhaVertical from "../../../../GlobalComponents/Components Perfil/Linha Vertical/LinhaVerticalMoldura";
-import RichardPerfil from "../../../../../Assets/Images/PerfilENetworking/RichardPhotoPerfil.jpg";
 import MySign from "../../../../../Assets/Png/MySign/MySignWhite.png"
-import myResume from "../../../../../Assets/PDF/Richard Valentim da Silva.pdf"
+import ButtonPerfil from "../../../../GlobalComponents/Buttons/custom buttons/buttonPerfil";
+import RichardPhoto from "../../../../../Assets/Images/PerfilENetworking/RichardPhotoPerfil.jpg"
 
 /*LIBRARIES REACT IMPORTS*/
 import AOS from 'aos';
@@ -22,7 +22,7 @@ function Perfil() {
         AOS.init({
             once: true,
             offset: 100,
-            threshold: 0.4,
+            threshold: 0.1,
         });
 
         AOS.refresh();
@@ -38,10 +38,6 @@ function Perfil() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    /*************************************************/
-    const handleButtonClick = () => {
-        window.open(myResume, '_blank')
-    }
 
     /*************************************************/
 
@@ -58,10 +54,10 @@ function Perfil() {
                 {!isSmallScreen && <LinhaHorizontal />}
 
                 <div id="content-perfil">
-                    {!isSmallScreen && <LinhaVertical intervalTime={0} heightLine={"479px"}/>}
+                    {!isSmallScreen && <LinhaVertical intervalTime={0} heightLine={"100%"}/>}
 
                     <div id="profile-photo-container">
-                        <img alt={"Richard Foto"} src={RichardPerfil} id="richardPhoto"
+                        <img alt={"Richard Foto"} src={RichardPhoto} id="richardPhoto"
                              data-aos="fade"
                              data-aos-offset="100"
                              data-aos-delay="400"
@@ -104,9 +100,12 @@ function Perfil() {
                             espanhol.
                         </p>
 
-                        <button className="buttons" onClick={handleButtonClick} style={{marginBlock:"20px"}}>
-                            Meu resumo
-                        </button>
+                        <div data-aos="fade"
+                             data-aos-delay="1000"
+                             data-aos-duration="1000"
+                             data-aos-easing="ease-out">
+                        <ButtonPerfil text="Meu Currículo"/>
+                        </div>
                         <div id="darkSquare-perfil"></div>
                     </div>
 

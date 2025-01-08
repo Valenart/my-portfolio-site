@@ -49,6 +49,18 @@
     flex-direction: column;
 }
 
+#photoColumn1-networking a, #photoColumn2-networking a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.linksImage-networking:hover > img {
+    transform: scale(1.1);
+    border-radius: 2px;
+}
+
 #photoColumn1-networking {
 
 }
@@ -62,17 +74,28 @@
 }
 
 .smallImage-networking {
+    display: block;
     border-radius: 2px;
     margin-block: 10px;
     width: 150px;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
 }
 
 .normalImage-networking {
+    display: block;
     border-radius: 2px;
     width: 150px;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
 }
 
-/*********BLACK SQUARE PHOTOS*********/
+.normalImage-networking:hover , .smallImage-networking:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.2);
+}
+
+    /*********BLACK SQUARE PHOTOS*********/
 #darkSquare-networking{
     position: absolute;
     display: flex;
@@ -119,6 +142,10 @@
 @media (max-width: 799px) {
     #main-networking {
         width: 90vw;
+    }
+
+    #photoColumn1-networking a, #photoColumn2-networking a {
+        width: 30%;
     }
 
     #frame-networking {

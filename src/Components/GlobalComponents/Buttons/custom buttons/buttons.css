@@ -1,0 +1,184 @@
+
+/*PERFIL*/
+
+#divPerfil-button {
+    display: flex;
+}
+
+#buttonPerfil-button {
+    margin-block: 15px;
+    border: 1px solid #fff;
+    color: white;
+    font-weight: 600;
+    background: none;
+    padding: 10px 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#iconButtonPerfil-button {
+    opacity: 0;
+    color: rgba(11, 12, 19, 1) !important;
+    font-size: 20px;
+    position: absolute;
+    transition: opacity 0.2s ease-in-out;
+    animation: BackslidePerfil 0.3s ease-in-out forwards;
+}
+
+#buttonPerfil-button:hover {
+    padding-right: 40px;
+    color: rgba(11, 12, 19, 1) !important;
+    background: white;
+    transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#buttonPerfil-button:hover > #iconButtonPerfil-button {
+    display: inline;
+    animation: RightslidePerfil 0.3s ease-in-out forwards;
+    transition: opacity 0.6s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes RightslidePerfil {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(320%);
+    }
+}
+
+@keyframes BackslidePerfil {
+    from {
+        transform: translateX(320%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/*NETWORKING*/
+
+#divNetworking-button {
+    display: flex;
+}
+
+#buttonNetworking-button {
+    margin-block: 15px;
+    border: 1px solid #fff;
+    color: white;
+    font-weight: 600;
+    background: none;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#iconNetworkingButton-button {
+    opacity: 0;
+    color: rgba(11, 12, 19, 1) !important;
+    font-size: 20px;
+    position: absolute;
+    transition: opacity 0.2s ease-in-out;
+    animation: BackslideNetworking 0.3s ease-in-out forwards;
+}
+
+#buttonNetworking-button:hover {
+    padding-right: 40px;
+    color: rgba(11, 12, 19, 1) !important;
+    background: white;
+    transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#buttonNetworking-button:hover > #iconNetworkingButton-button {
+    display: inline;
+    animation: RightslideNetworking 0.3s ease-in-out forwards;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes RightslideNetworking {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(290%);
+    }
+}
+
+@keyframes BackslideNetworking {
+    from {
+        transform: translateX(290%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 800px) {
+    padding: 10px 25px;
+}
+
+/*FOOTER*/
+
+#divFooter-button {
+    display: flex;
+}
+
+#buttonFooter-button {
+    margin-block: 10px;
+    border: 1px solid #fff;
+    color: white;
+    font-weight: 600;
+    background: none;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#iconButtonFooter-button {
+    opacity: 0;
+    color: rgba(11, 12, 19, 1) !important;
+    font-size: 20px;
+    position: absolute;
+    transition: opacity 0.2s ease-in-out;
+    animation: BackslideFooter 0.3s ease-in-out forwards;
+}
+
+#buttonFooter-button:hover {
+    padding-right: 45px;
+    color: rgba(11, 12, 19, 1) !important;
+    background: white;
+    transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#buttonFooter-button:hover > #iconButtonFooter-button {
+    display: inline;
+    animation: RightslideFooter 0.3s ease-in-out forwards;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+@keyframes RightslideFooter {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(300%);
+    }
+}
+
+@keyframes BackslideFooter {
+    from {
+        transform: translateX(300%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

@@ -18,7 +18,7 @@
     "react-icons": "^5.4.0",
     "react-modal-image": "^2.6.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitayls": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -45,6 +45,8 @@
     ]
   },
   "devDependencies": {
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "sass": "^1.83.1",
+    "sass-loader": "^16.0.4"
   }
 }

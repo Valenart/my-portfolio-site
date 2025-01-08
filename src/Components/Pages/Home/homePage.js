@@ -3,7 +3,7 @@ import Perfil from './HomeComponents/Perfil/perfil';
 import Networking from "./HomeComponents/Networking/networking";
 import Footer from "./HomeComponents/Footer/footer";
 import Certificacao from "./HomeComponents/Certifications/certificacoes";
-import awsTeste from '../../../Assets/Png/Icons/AWS-Copia.png';
+import Navbar from "./HomeComponents/Navbar/Navbar";
 
 /*LIBRARIES REACT IMPORTS*/
 import FramerMotion from "./HomeComponents/Certifications/Scroll Motion/framerMotion";
@@ -27,23 +27,23 @@ function Home() {
 
     return (
         <main id="home">
-
-                <Perfil/>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <Certificacao/>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <Networking/>
-                <br></br>
-                <br></br><
-                br></br>
-                <br></br>
-                <Footer/>
+            <Navbar/>
+            <Perfil/>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Certificacao/>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Networking/>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <Footer/>
         </main>
     )
 }

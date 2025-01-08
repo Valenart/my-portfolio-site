@@ -60,8 +60,7 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export default function FramerMotion() {
     return (
         <section>
-            {/* Substituímos texto por imagens */}
-            <ParallaxText baseVelocity={0.5} className="teste1">
+            <ParallaxText baseVelocity={0.5} >
             </ParallaxText>
         </section>
     );

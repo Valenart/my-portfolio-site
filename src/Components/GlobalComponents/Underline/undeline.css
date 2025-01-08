@@ -1,0 +1,39 @@
+#main-underline:hover #line-underline {
+    display: block;
+    animation: slide-in 0.3s ease-in-out forwards;
+}
+
+#main-underline #line-underline {
+    color: white;
+    background: #fff;
+    height: 1px;
+    animation: slide-out 0.3s ease-in-out forwards;
+}
+
+#main-underline a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@keyframes slide-in {
+    from {
+        transform: scaleX(0);
+        transform-origin: center;
+    }
+    to {
+        transform: scaleX(1);
+        transform-origin: center;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: scaleX(1);
+        transform-origin: center;
+    }
+    to {
+        transform: scaleX(0);
+        transform-origin: center;
+    }
+}

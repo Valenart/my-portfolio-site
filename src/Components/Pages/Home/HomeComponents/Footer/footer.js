@@ -1,7 +1,7 @@
 /*IMPORT IMAGES AND COMPONENTS*/
-// noinspection JSValidateTypes
 
 import MyLogo from '../../../../../Assets/Png/MySign/MyLogoWhite.png'
+import ButtonFooter from "../../../../GlobalComponents/Buttons/custom buttons/buttonFooter";
 
 
 /*REACT LIBRARIES IMPORTS*/
@@ -26,10 +26,6 @@ import {Link} from "@mui/material";
 
 
 export default function Footer () {
-
-    const handleEmailClick = () => {
-            window.location.href = "mailto:valentimrichard@example.com?subject=Contato%20pelo%20site&body=Olá%20Richard,%20gostaria%20de%20entrar%20em%20contato";
-        }
 
     useEffect(() => {
 
@@ -56,30 +52,27 @@ export default function Footer () {
                     <li><BsFillTelephoneFill className={"iconsContact"}/> (11) 98833-5962</li>
                 </ul>
 
-                <button className={"buttons"} onClick={handleEmailClick}>
-                    Contate-me
-                </button>
-
+                <ButtonFooter text="Contate-me"/>
 
                 <div id='divIcons-footer'>
                     <a href="https://www.instagram.com/valentimrichardd/" target="_blank" rel="noopener noreferrer"
                     style={{display: "inline-flex", width: '25px', height: '25px', marginRight:'5px'}}>
-                        <IoLogoInstagram style={{fontSize: "25px", width: '100%'}}/>
+                        <IoLogoInstagram style={{fontSize: "25px", width: '100%', color: 'white'}}/>
                     </a>
 
                     <a href="https://wa.me/5511988335962" target="_blank" rel="noopener noreferrer"
                     style={{display: "inline-flex", width: '25px', height: '25px', marginInline:'5px'}}>
-                        <IoLogoWhatsapp style={{fontSize: "25px", width: '100%'}}/>
+                        <IoLogoWhatsapp style={{fontSize: "25px", width: '100%', color: 'white'}}/>
                     </a>
 
                     <a href="https://www.linkedin.com/in/richardvalentim/" target="_blank" rel="noopener noreferrer"
                     style={{display: "inline-flex", width: '25px', height: '25px', marginInline:'5px'}}>
-                        <IoLogoLinkedin style={{fontSize: "25px", width: '100%'}}/>
+                        <IoLogoLinkedin style={{fontSize: "25px", width: '100%', color: 'white'}}/>
                     </a>
 
                     <a href="https://github.com/Valenart" target="_blank" rel="noopener noreferrer"
                     style={{display: "inline-flex", width: '25px', height: '25px', marginInline:'5px'}}>
-                        <IoLogoGithub style={{fontSize: "25px", width: '100%'}}/>
+                        <IoLogoGithub style={{fontSize: "25px", width: '100%', color: 'white'}}/>
                     </a>
                 </div>
             </div>
@@ -104,7 +97,7 @@ export default function Footer () {
                 </img>
                 <p data-aos="zoom-out"
                    data-aos-duration="1000"
-                   data-aos-delay="700">2025 - Richard Valentim, Full-Stack Dev © All rights reserved.</p>
+                   data-aos-delay="700" style={{color: 'white'}}>2025 - Richard Valentim, Full-Stack Dev © All rights reserved.</p>
             </div>
         </footer>
     )

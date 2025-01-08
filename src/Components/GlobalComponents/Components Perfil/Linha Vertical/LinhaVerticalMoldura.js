@@ -1,6 +1,6 @@
 
 
-const LinhaVerticalMoldura = ({heightLine = '398px'}) => {
+const LinhaVerticalMoldura = ({heightLine = '100%'}) => {
 
     const lineStyles = {
         width: '2px',
@@ -9,7 +9,7 @@ const LinhaVerticalMoldura = ({heightLine = '398px'}) => {
     };
 
     return (
-        <div style={{ width: '2px', height: '360px' }}>
+        <div style={{ width: '2px', height: '100%' }}>
             <div style={lineStyles}></div>
         </div>
     );

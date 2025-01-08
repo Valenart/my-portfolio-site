@@ -1,4 +1,3 @@
-
 /*IMPORTS CERTIFICATIONS*/
 import FiapCert from '../../../../../Assets/Png/Certfications/Java_Fiap.png';
 import CiscoCert from '../../../../../Assets/Png/Certfications/HardwareBasics_Cisco.png';
@@ -22,7 +21,6 @@ import "./certificacoes.css";
 
 /*LIBRARIES REACT IMPORTS*/
 import AOS from 'aos';
-import ModalImage from 'react-modal-image';
 import React, { useState, useEffect } from 'react';
 
 export default function Certificacoes() {
@@ -42,7 +40,7 @@ export default function Certificacoes() {
         AOS.init({
             once: true,
             offset: 100,
-            threshold: 0.2,
+            threshold: 0.1,
         });
 
         AOS.refresh();
@@ -63,8 +61,19 @@ export default function Certificacoes() {
                  data-aos-delay="50"
                  data-aos-duration="1000"
                  data-aos-easing="ease-out">
-                <h1 id="titleText-certifications">Certificações definem minha carreira</h1>
-                <p className="description">Estas são algumas das certificações que conquistei ao longo dos últimos anos.
+                <h1 id="titleText-certifications"
+                    data-aos="fade"
+                    data-aos-offset="200"
+                    data-aos-delay="200"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-out">Certificações definem minha carreira</h1>
+
+                <p className="description"
+                   data-aos="fade"
+                   data-aos-offset="200"
+                   data-aos-delay="400"
+                   data-aos-duration="1000"
+                   data-aos-easing="ease-out">Estas são algumas das certificações que conquistei ao longo dos últimos anos.
                     Elas foram emitidas
                     por empresas de grande reconhecimento no mercado, o que reforça meu compromisso com a qualidade
                     e a busca constante por aprendizado e atualização profissional.
@@ -84,7 +93,7 @@ export default function Certificacoes() {
                     }} className="div-certifications"
                                             data-aos="fade"
                                             data-aos-offset="200"
-                                            data-aos-delay="100"
+                                            data-aos-delay="300"
                                             data-aos-duration="1000"
                                             data-aos-easing="ease-out">
 
@@ -102,7 +111,7 @@ export default function Certificacoes() {
                     }} className="div-certifications"
                                             data-aos="fade"
                                             data-aos-offset="200"
-                                            data-aos-delay="300"
+                                            data-aos-delay="500"
                                             data-aos-duration="1000"
                                             data-aos-easing="ease-out">
 
@@ -120,7 +129,7 @@ export default function Certificacoes() {
                     }}
                                             data-aos="fade"
                                             data-aos-offset="200"
-                                            data-aos-delay="500"
+                                            data-aos-delay="700"
                                             data-aos-duration="1000"
                                             data-aos-easing="ease-out">
 
@@ -140,53 +149,57 @@ export default function Certificacoes() {
                  data-aos-duration="1000"
                  data-aos-easing="ease-out">
                 <div id="div1-certifications">
-                    <ModalImage className="certImages-certfications"
-                                style={{width: '50px'}}
-                                small={Cisco2Cert}
-                                large={Cisco2Cert}
-                                alt="Certificado Cisco2"
-                    />
+                    <a href={Cisco2Cert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+                        <img className="certImages-certfications"
+                             style={{width: '95%'}}
+                             src={Cisco2Cert}
+                             alt="Certificado Cisco2"
+                        />
+                    </a>
 
-                    <ModalImage className="certImages-certfications"
-                                style={{width: '50px'}}
-                                small={Google1Cert}
-                                large={Google1Cert}
-                                alt="Certificado Google1"
-                    />
-
+                    <a href={Google1Cert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+                        <img className="certImages-certfications"
+                             style={{width: '95%'}}
+                             src={Google1Cert}
+                             alt="Certificado Google1"
+                        />
+                    </a>
                 </div>
 
                 <div id="div2-certifications">
-                    <ModalImage className="certImages-certfications"
-                                style={{width: '50px'}}
-                                small={Google2Cert}
-                                large={Google2Cert}
-                                alt="Certificado Google2"
-                    />
+                    <a href={Google2Cert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+                        <img className="certImages-certfications"
+                             style={{width: '95%'}}
+                             src={Google2Cert}
+                             alt="Certificado Google2"
+                        />
+                    </a>
 
-                    <ModalImage className="certImages-certfications"
-                                style={{width: '50px'}}
-                                small={FiapCert}
-                                large={FiapCert}
-                                alt="Certificado Java Fiap"
-                    />
+                    <a href={FiapCert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+                        <img className="certImages-certfications"
+                             style={{width: '95%'}}
+                             src={FiapCert}
+                             alt="Certificado Java Fiap"
+                        />
+                    </a>
                 </div>
 
                 <div id="div3-certifications">
-                    <ModalImage className="certImages-certfications"
-                                style={{width: '50px'}}
-                                small={MetaCert}
-                                large={MetaCert}
-                                alt="Certificado Meta"
-                    />
-                    <ModalImage className="certImages-certfications"
-                                style={{width: '50px'}}
-                                small={CiscoCert}
-                                large={CiscoCert}
-                                alt="Certificado Cisco1"
-                    />
+                    <a href={MetaCert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+                        <img className="certImages-certfications"
+                             style={{width: '95%'}}
+                             src={MetaCert}
+                             alt="Certificado Meta"
+                        />
+                    </a>
+                    <a href={CiscoCert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+                        <img className="certImages-certfications"
+                             style={{width: '95%'}}
+                             src={CiscoCert}
+                             alt="Certificado Cisco1"
+                        />
+                    </a>
                 </div>
-
             </div>
             <div id="darkSquare-certifications"></div>
         </div>

@@ -12,6 +12,11 @@
     display: flex;
 }
 
+#divIcons-footer a:hover{
+    transition: opacity ease-in-out 0.2s;
+    opacity: 0.7;
+}
+
 #containerMiddle-footer {
     position: relative;
     transform: translate(-6em, 0em);
@@ -101,6 +106,11 @@
 
     .iconsContact {
         display: none;
+    }
+
+    #iconsContainer-footer {
+        margin: 10px;
+        width: 35%;
     }
 
     #iconsContainer-footer ul li{
