@@ -46,7 +46,7 @@ export default function Networking() {
     /*************************************************/
 
     return (
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}} id='main-networking'>
+        <section style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}} id='main-networking'>
 
             <div id="frame-networking"
                  data-aos="fade-up"
@@ -174,7 +174,7 @@ export default function Networking() {
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }
 

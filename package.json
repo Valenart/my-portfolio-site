@@ -7,10 +7,14 @@
     "@emotion/styled": "^11.14.0",
     "@motionone/utils": "^10.18.0",
     "@mui/material": "^6.2.0",
+    "@mui/x-charts": "^7.23.6",
+    "@syncfusion/ej2-react-charts": "^28.1.38",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+    "axios": "^1.7.9",
+    "chart.js": "^4.4.7",
     "framer-motion": "^11.15.0",
     "motion": "^11.15.0",
     "react": "^18.3.1",
@@ -18,7 +22,7 @@
     "react-icons": "^5.4.0",
     "react-modal-image": "^2.6.0",
     "react-scripts": "5.0.1",
-    "web-vitayls": "^2.1.4"
+    "web-vitals": "^4.2.4"
   },
   "scripts": {
     "start": "react-scripts start",

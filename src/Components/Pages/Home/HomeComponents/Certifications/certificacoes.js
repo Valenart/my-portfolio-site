@@ -49,7 +49,7 @@ export default function Certificacoes() {
     /*************************************************/
 
     return (
-        <div id="main-certifications" data-aos="fade-up"
+        <section id="main-certifications" data-aos="fade-up"
              data-aos-offset="200"
              data-aos-delay="50"
              data-aos-duration="1000"
@@ -202,6 +202,6 @@ export default function Certificacoes() {
                 </div>
             </div>
             <div id="darkSquare-certifications"></div>
-        </div>
+        </section>
     )
 }

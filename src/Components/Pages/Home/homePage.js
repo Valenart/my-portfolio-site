@@ -1,6 +1,8 @@
 /*IMPORT IMAGES AND COMPONENTS*/
 import Navbar from "./HomeComponents/Navbar/Navbar";
+import Introduction from './HomeComponents/Introduction/introduction';
 import Perfil from './HomeComponents/Perfil/perfil';
+import Skills from './HomeComponents/Skills/Skills.js';
 import Certification from "./HomeComponents/Certifications/certificacoes";
 import Networking from "./HomeComponents/Networking/networking";
 import Footer from "./HomeComponents/Footer/footer";
@@ -12,6 +14,7 @@ import {useEffect, useState} from "react";
 
 /*IMPORT CSS*/
 import './homePage.css';
+import ChartDonut from "../../GlobalComponents/Donut Chart/chartDonut";
 
 
 function Home() {
@@ -29,21 +32,11 @@ function Home() {
     return (
         <main id="home">
             <Navbar/>
+            <Introduction/>
             <Perfil/>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
+            <Skills/>
             <Certification/>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
             <Networking/>
-            <br></br>
-            <br></br>
-            <br></br>
-            <br></br>
             <Footer/>
         </main>
     )

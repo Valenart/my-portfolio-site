@@ -42,7 +42,7 @@ function Perfil() {
     /*************************************************/
 
     return (
-        <div style={{display: 'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center'}} id="main-perfil">
+        <section style={{display: 'flex', flexDirection: 'column', justifyContent:'center', alignItems: 'center'}} id="main-perfil">
 
             <div id="frame-Perfil"
                  data-aos="fade-up"
@@ -124,7 +124,7 @@ function Perfil() {
                 </div>
 
             </div>
-        </div>
+        </section>
     );
 }
 
