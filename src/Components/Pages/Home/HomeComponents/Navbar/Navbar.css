@@ -1,15 +1,16 @@
 #main-navbar {
     color: white;
     display: flex;
+    overflow: hidden;
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     padding: 20px;
     top: 0;
     z-index: 10;
-    border-bottom: 1px solid #9F9F9F;
-    margin-bottom: 100px;
+    border-bottom: 1px solid rgba(159, 159, 159, 0.6);
+    backdrop-filter: blur(5px);
 }
 
 #list-navbar {

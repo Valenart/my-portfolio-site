@@ -1,6 +1,7 @@
 #main-certifications {
     width: 80vw;
     height: 560px;
+    margin-block: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -121,6 +122,7 @@
 
 @media (max-width: 799px) {
     #main-certifications {
+
         width: 96vw;
         flex-direction: column;
         text-align: center;

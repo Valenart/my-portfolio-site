@@ -1,5 +1,81 @@
+/************************************************/
+/*LINKEDIN BUTTON*/
 
-/*PERFIL*/
+#divIntroLinkedIn-button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buttonIntroLinkedIn-button {
+    margin-block: 15px;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
+    font-weight: 600;
+    background: none;
+    padding: 10px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#iconIntroLinkedIn-button {
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: color 0.3s ease-in-out;
+    animation: BackslideGitHubButton 0.3s ease-in-out forwards;
+}
+
+#buttonIntroLinkedIn-button:hover {
+    background: rgb(40, 60, 119) !important;
+    border: 1px solid rgb(143, 143, 143);
+    transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+/************************************************/
+/*GITHUB*/
+/************************************************/
+
+#divIntroGitHub-button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#buttonIntroGitHub-button {
+    margin-block: 15px;
+    border: 1px solid #fff;
+    color: white;
+    font-weight: 600;
+    background: none;
+    padding: 10px 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#iconIntroGitHub-button {
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: color 0.3s ease-in-out;
+    animation: BackslideGitHubButton 0.3s ease-in-out forwards;
+}
+
+#buttonIntroGitHub-button:hover {
+    color: rgba(11, 12, 19, 1) !important;
+    background: white;
+    transition: padding-right 0.3s ease-in-out, color 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+#buttonIntroGitHub-button:hover > #iconIntroGitHub-button {
+    color: rgba(11, 12, 19, 1) !important;
+    transition: color 0.3s ease-in-out;
+}
+
+
+/*PERFIL BUTTON*/
 
 #divPerfil-button {
     display: flex;

@@ -6,7 +6,8 @@ import Skills from './HomeComponents/Skills/Skills.js';
 import Certification from "./HomeComponents/Certifications/certificacoes";
 import Networking from "./HomeComponents/Networking/networking";
 import Footer from "./HomeComponents/Footer/footer";
-
+import ButtonGitHub from "../../GlobalComponents/Buttons/custom buttons/buttonGitHub";
+import ButtonLinkedIn from "../../GlobalComponents/Buttons/custom buttons/buttonLinkedIn";
 
 /*LIBRARIES REACT IMPORTS*/
 import FramerMotion from "./HomeComponents/Certifications/Scroll Motion/framerMotion";

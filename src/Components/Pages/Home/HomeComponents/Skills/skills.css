@@ -1,21 +1,285 @@
 #main-skills {
     color: white;
-    height: 1300px;
+    height: 1100px;
     width: 100vw;
+    margin-block: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #000000;
+    z-index: 0;
 }
 
 /**/
 #divIntroduction-skills {
-    width: 80vw;
-    height: 800px;
-    background-color: #070810;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+#divCard-skills {
+    margin-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+}
+
+.contentCard-skills {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid white;
+    width: 90%;
+    height: 100%;
+    padding: 0 20px;
+    transition: background-color 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+.contentCard-skills:hover {
+    scale: 1.01;
+    background-color: #090a15;
+    transition: background-color 0.2s ease-in-out, scale 0.2s ease-in-out;
+
+}
+
+.IconBackgroundCard3-skills {
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: 200px;
+    filter: contrast(0.5);
+    animation: rotateCards-out 0.5s ease-in-out forwards;
+    opacity: 1;
+    transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 
+/******************************************/
+/******************************************/
+.IconBackgroundCard2-skills {
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    left: 200px;
+    filter: contrast(0.5);
+    animation: rotateCards-out 0.5s ease-in-out forwards;
+    opacity: 0.2;
+    transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.contentCard-skills:hover > .IconBackgroundCard2-skills {
+    opacity: 0.3;
+    filter: contrast(1);
+    animation: rotateCards-in 0.5s ease-in-out forwards;
+    transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out ;
+}
+
+@keyframes rotateCards-in {
+    0% {
+        transform: translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
+    }
+    100% {
+        transform: translateX(-50px) translateY(0px);
+        opacity: 0.4;
+        filter: contrast(1);
+
+    }
+}
+
+@keyframes rotateCards-out {
+    0% {
+        transform: translateX(-50px) translateY(0px);
+        opacity: 0.4;
+        filter: contrast(1);
+
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
+    }
+}
+
+/******************************************/
+/******************************************/
+#IconBackgroundCard-skills {
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: 120px;
+    filter: contrast(0.5);
+    animation: rotate-out 0.5s ease-in-out forwards;
+    opacity: 0.2;
+    transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.contentCard-skills:hover > #IconBackgroundCard-skills {
+    opacity: 0.3;
+    filter: contrast(1);
+    animation: rotate-in 0.5s ease-in-out forwards;
+    transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out ;
+}
+
+@keyframes rotate-in {
+    0% {
+        transform: rotate(-120deg) translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
+    }
+    100% {
+        transform: rotate(0deg) translateX(-50px) translateY(0px);
+        opacity: 0.3;
+        filter: contrast(1);
+
+    }
+}
+
+@keyframes rotate-out {
+    0% {
+        transform: rotate(0deg) translateX(-50px) translateY(0px);
+        opacity: 0.3;
+        filter: contrast(1);
+
+    }
+    100% {
+        transform: rotate(-120deg) translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
+    }
+}
+/******************************************/
+/******************************************/
+
+
+
+.divIconsCards-skills {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.divIconsCards-skills img{
+    margin: 5px;
+    width: 15%;
+}
+
+.divIconsCards-skills img{
+    animation: fade-down 0.3s ease-in-out forwards;
+}
+
+.contentCard-skills:hover > .lowerTextCard-skills {
+    background-color: #24346a;
+}
+
+.contentCard-skills:hover > .divTextCards-skills {
+    color: white;
+
+}
+
+.contentCard-skills:hover > .divIconsCards-skills img {
+    animation:  fade-up 0.3s ease-in-out forwards;
+}
+
+/*****************************************************/
+
+.divIcons2Cards-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.divIcons2Cards-skills img{
+    margin: 5px;
+    width: 13%;
+    animation: fade-down 0.3s ease-in-out forwards;
+}
+
+.contentCard-skills:hover > .divIcons2Cards-skills img {
+    animation:  fade-up 0.3s ease-in-out forwards;
+}
+
+#divCard-skills > .photoCard-skills {
+    border-radius: 2px;
+    display: flex;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.divTextCards-skills {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.divTextCards-skills h4 {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+/**/
+
+
+.photoCard-skills,.divTextCards-skills {
+    display: flex;
+    animation: down 0.3s ease-in-out forwards;
+}
+
+.contentCard-skills:hover > .photoCard-skills {
+    animation: up 0.3s ease-in-out forwards;
+}
+
+
+.contentCard-skills:hover > .divTextCards-skills {
+    animation: up 0.3s ease-in-out forwards;
+}
+
+.lowerTextCard-skills {
+    background-color: #21244A;
+}
+
+.lowerTextCard2-skills {
+    background-color: #4a2121;
+}
+
+.lowerTextCard3-skills {
+    background-color: #4a4021;
+}
+
+.lowerTextCard-skills, .lowerTextCard2-skills, .lowerTextCard3-skills {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    margin-block: 20px;
+    font-weight: 600;
+}
+
+.upperTextCard-skills {
+    color: #D9D9D9;
+    font-size: 17px;
+    font-weight: 500;
+}
 
 /**/
 #textLineFlow-skills {
@@ -24,7 +288,6 @@
     width: 50vw;
 }
 
-/**/
 #divLineFlow-skills {
     display: flex;
     width: 100%;
@@ -34,7 +297,6 @@
 }
 
 #divLineFlow-skills ul {
-
     display: flex;
     flex-direction: row;
     width: 70%;
@@ -61,4 +323,48 @@
 #svgLine-skills {
     height: 200px;
     width: 60vw;
+}
+
+/**/
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/**************************/
+/**************************/
+@keyframes fade-up {
+    0% {
+
+        opacity: 0;
+    }
+    100% {
+
+        opacity: 1;
+    }
+}
+
+@keyframes fade-down {
+    0% {
+
+        opacity: 1;
+    }
+    100% {
+
+        opacity: 0;
+    }
 }
