@@ -47,7 +47,7 @@ export default function Projects() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const token = "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";
+            const token = "/";
             const headers = { Authorization: `Bearer ${token}` };
 
             try {
