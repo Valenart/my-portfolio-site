@@ -8,14 +8,12 @@ import {useEffect} from "react";
 /*0B0C13FF*/
 function App() {
 
-
         return (
       <div className="App">
           <HomePage/>
       </div>
 
   );
-
 }
 
 export default App;

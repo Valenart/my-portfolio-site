@@ -9,6 +9,7 @@
 }
 
 #containerText-certifications {
+    border: 1px solid white;
     display: flex;
     flex-direction: column;
     width: 40%;

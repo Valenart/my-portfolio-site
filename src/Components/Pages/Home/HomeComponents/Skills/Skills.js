@@ -3,7 +3,9 @@ import { motion } from "motion/react";
 import './skills.css';
 import {useEffect, useState} from "react";
 import AOS from 'aos';
-import axios from "axios";
+
+
+import Projects from '../Projects/Projects';
 
 import ImageFront from '../../../../../Assets/Images/Skills/pexels-format-380633-1029757.jpg'
 import ImageBack from '../../../../../Assets/Images/Skills/pexels-pixabay-270557.jpg'
@@ -34,65 +36,6 @@ import PostgreSQL from '../../../../../Assets/SVG Icons/PostgreSQL.svg';
 export default function Skills() {
 
 
-    const [dados, setDados] = useState([]);
-    const [porcentagens, setPorcentagens] = useState({});
-
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const resposta = await axios.get('https://api.github.com/users/valenart/repos');
-                const repos = resposta.data;
-
-                let arrayLinguagens = []; // Array para armazenar as linguagens de todos os repositórios
-
-                // Passo 1: Extrair linguagens de todos os repositórios
-                for (const valoresRepositorios of repos) {
-                    const linguagensRepositorios = await axios.get(
-                        `https://api.github.com/repos/${valoresRepositorios.full_name}/languages`
-                    );
-                    const respostasLinguagens = linguagensRepositorios.data;
-                    arrayLinguagens.push(respostasLinguagens);
-                }
-
-                // Passo 2: Somar os valores de cada linguagem
-                let somatorioLinguagens = {}; // Objeto para armazenar a soma das linguagens
-
-                arrayLinguagens.forEach(linguagem => {
-                    for (const [lingua, bytes] of Object.entries(linguagem)) {
-                        somatorioLinguagens[lingua] = (somatorioLinguagens[lingua] || 0) + bytes;
-                    }
-                });
-
-                // Passo 3: Somar todos os valores para obter o total
-                const totalLinguagens = Object.values(somatorioLinguagens).reduce((acc, curr) => acc + curr, 0);
-
-                // Passo 4: Calcular a porcentagem de cada linguagem
-                const porcentagensCalculadas = {};
-                for (const [lingua, total] of Object.entries(somatorioLinguagens)) {
-                    porcentagensCalculadas[lingua] = ((total / totalLinguagens) * 100).toFixed(3);
-                }
-
-                // Passo 5: Verificar a soma das porcentagens (deve ser 100)
-                const somaPorcentagens = Object.values(porcentagensCalculadas).reduce((acc, curr) => acc + parseFloat(curr), 0);
-                if (somaPorcentagens !== 100) {
-                    console.error("A soma das porcentagens não é igual a 100%. Algo deu errado.");
-                }
-
-
-                setDados(somatorioLinguagens); // Armazena o somatório de linguagens
-                setPorcentagens(porcentagensCalculadas); // Armazena as porcentagens calculadas
-
-                console.log("Porcentagens:", porcentagensCalculadas);
-
-                // Passo 6: Você pode passar os dados para um gráfico ou fazer outras operações conforme necessário.
-
-            } catch (erro) {
-                console.error('Erro ao buscar dados:', erro);
-            }
-        };
-
-        fetchData();
-    }, []);
 
 
     /*************************************/
@@ -117,7 +60,16 @@ export default function Skills() {
                         <img src={ImageFront} className="photoCard-skills"></img>
 
                         <div className="divTextCards-skills">
-                            <h4 className="lowerTextCard-skills">FRONT-END</h4>
+                            <h4 className="lowerTextCard-skills" style={{display: 'flex', alignItems:"center"}}>
+                                <svg width="20" height="20" viewBox="0 0 25 25" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" style={{marginRight:'10px'}}>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M7.03125 3.125C6.6 3.125 6.25 3.475 6.25 3.90625C6.25 4.33828 6.6 4.6875 7.03125 4.6875C7.4625 4.6875 7.8125 4.33828 7.8125 3.90625C7.8125 3.475 7.4625 3.125 7.03125 3.125ZM10.1562 3.125C9.725 3.125 9.375 3.475 9.375 3.90625C9.375 4.33828 9.725 4.6875 10.1562 4.6875C10.5875 4.6875 10.9375 4.33828 10.9375 3.90625C10.9375 3.475 10.5875 3.125 10.1562 3.125ZM23.4375 6.25H1.5625V3.125C1.5625 2.2625 2.2625 1.5625 3.125 1.5625H21.875C22.7375 1.5625 23.4375 2.2625 23.4375 3.125V6.25ZM23.4375 21.875C23.4375 22.7375 22.7375 23.4375 21.875 23.4375H3.125C2.2625 23.4375 1.5625 22.7375 1.5625 21.875V7.8125H23.4375V21.875ZM21.875 0H3.125C1.39922 0 0 1.39922 0 3.125V21.875C0 23.6008 1.39922 25 3.125 25H21.875C23.6008 25 25 23.6008 25 21.875V3.125C25 1.39922 23.6008 0 21.875 0ZM3.90625 3.125C3.475 3.125 3.125 3.475 3.125 3.90625C3.125 4.33828 3.475 4.6875 3.90625 4.6875C4.3375 4.6875 4.6875 4.33828 4.6875 3.90625C4.6875 3.475 4.3375 3.125 3.90625 3.125Z"
+                                          fill="white"/>
+                                </svg>
+                                FRONT-END
+                            </h4>
+
                             <h3 className='upperTextCard-skills'>Desenvolvendo interfaces modernas com ótimas
                                 experiências visuais e usabilidade.</h3>
                         </div>
@@ -148,12 +100,28 @@ export default function Skills() {
                         <img src={ImageBack} className="photoCard-skills"></img>
 
                         <div className="divTextCards-skills">
-                            <h4 className="lowerTextCard2-skills">BACK-END e DBs</h4>
+                            <h4 className="lowerTextCard2-skills" style={{display: 'flex', alignItems:"center"}}>
+                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" style={{marginRight:'10px'}}>
+                                    <path
+                                        d="M10.0126 0.0732422L7.51257 17.5733L9.98745 17.9268L12.4874 0.42679L10.0126 0.0732422Z"
+                                        fill="white"/>
+                                    <path
+                                        d="M15.625 13.375L13.8573 11.6073L16.4646 9L13.8573 6.39277L15.625 4.625L20 9L15.625 13.375Z"
+                                        fill="white"/>
+                                    <path
+                                        d="M3.53554 9L6.14276 11.6073L4.375 13.375L0 9L4.375 4.625L6.14276 6.39277L3.53554 9Z"
+                                        fill="white"/>
+                                </svg>
+
+
+                                BACK-END e DBs
+                            </h4>
                             <h3 className='upperTextCard-skills'>Desenvolvendo APIs e bancos de dados
                                 robustos para intregrações com front-end.</h3>
                         </div>
 
-                        <img src={Kotlin} className="IconBackgroundCard2-skills" style={{width:'400px'}}></img>
+                        <img src={Kotlin} className="IconBackgroundCard2-skills" style={{width: '400px'}}></img>
 
                         <div className="divIcons2Cards-skills">
                             <img src={Git}/>
@@ -172,12 +140,25 @@ export default function Skills() {
                         <img src={ImageHobbies} className="photoCard-skills"></img>
 
                         <div className="divTextCards-skills">
-                            <h4 className="lowerTextCard3-skills">IDIOMAS</h4>
+                            <h4 className="lowerTextCard3-skills" style={{display: 'flex', alignItems:"center"}}>
+
+                                <svg width="26" height="21" viewBox="0 0 26 21" fill="none"
+                                     xmlns="http://www.w3.org/2000/svg" style={{marginRight:'10px'}}>
+                                    <path
+                                        d="M15.6831 14.2984C17.1048 13.7379 18.3602 12.8246 19.3311 11.6445C20.1936 10.6245 20.6667 9.33206 20.6667 7.9964C20.6667 6.66073 20.1936 5.36826 19.3311 4.34834C18.3591 3.17156 17.1038 2.2614 15.6831 1.70349C14.0923 1.05133 12.3861 0.727163 10.667 0.750438C8.9466 0.732945 7.24042 1.06332 5.65091 1.72173C4.22926 2.27786 2.97346 3.18832 2.00285 4.36658C1.14606 5.3898 0.673494 6.68009 0.666748 8.01464C0.666719 9.15693 1.0186 10.2715 1.67452 11.2067C2.39157 12.2444 3.33691 13.1039 4.43793 13.7193C4.35294 13.9323 4.25705 14.1408 4.15065 14.344C4.05728 14.526 3.94899 14.6998 3.82688 14.8639L3.50768 15.2743C3.39261 15.421 3.26929 15.5611 3.13831 15.6938C2.96959 15.8716 2.86014 15.9902 2.81454 16.0495C2.76894 16.1088 2.81454 16.0495 2.75526 16.1133C2.69598 16.1772 2.69598 16.1863 2.69142 16.1817C2.68686 16.1772 2.69142 16.1817 2.6367 16.2547L2.58654 16.3322L2.55006 16.4006C2.53745 16.4283 2.52826 16.4574 2.5227 16.4873C2.52022 16.5176 2.52022 16.5481 2.5227 16.5785C2.51586 16.6085 2.51586 16.6396 2.5227 16.6697C2.53801 16.7859 2.59467 16.8927 2.6823 16.9706C2.76307 17.0419 2.86645 17.0823 2.97415 17.0846H3.01519C3.4712 17.0162 3.89528 16.9387 4.23729 16.8566C5.6508 16.4939 6.98606 15.8757 8.17719 15.0326C8.99793 15.1919 9.83106 15.2788 10.667 15.2925C12.389 15.3028 14.0952 14.9646 15.6831 14.2984Z"
+                                        fill="white"/>
+                                    <path
+                                        d="M25.0942 14.6616C25.6926 13.6436 26.0093 12.4263 25.9998 11.1811C25.9902 9.93593 25.6549 8.72575 25.041 7.72116C24.3622 6.58537 23.4727 5.65388 22.4426 5C22.7086 6.02498 22.796 7.10455 22.6994 8.17171C22.6029 9.23887 22.3243 10.2709 21.8811 11.2036C21.2647 12.4816 20.4261 13.5856 19.4221 14.4405C18.4002 15.3135 17.2646 15.9774 16.0615 16.4053C14.7837 16.8627 13.4565 17.0911 12.1229 17.0831C11.8689 17.0831 11.4959 17.0831 11 17.0193C12.8007 18.3984 14.9047 19.0998 17.041 19.0331C17.7927 19.0315 18.5428 18.951 19.2828 18.7924C20.3533 19.7006 21.5534 20.3664 22.8237 20.7572C23.1862 20.8596 23.5528 20.9399 23.9221 20.9978C23.9719 21.0037 24.0223 20.9976 24.0701 20.9799C24.118 20.9622 24.1624 20.9332 24.2008 20.8947C24.2874 20.8088 24.3456 20.6886 24.3647 20.5558C24.3647 20.4968 24.3647 20.4625 24.3647 20.4575C24.3647 20.4526 24.3647 20.4183 24.3647 20.3593L24.3401 20.266L24.3073 20.1923L24.2623 20.1088C24.2472 20.0814 24.2308 20.0552 24.2131 20.0302L24.1557 19.9565C24.1398 19.9316 24.122 19.9086 24.1024 19.8878C24.0614 19.8239 23.9631 19.6962 23.8114 19.5047C23.6937 19.3617 23.5829 19.2108 23.4795 19.0528L23.1885 18.591C23.0669 18.4069 22.9599 18.2096 22.8688 18.0016C22.7828 17.8002 22.6926 17.5743 22.6106 17.3336C23.5949 16.677 24.4437 15.7638 25.0942 14.6616Z"
+                                        fill="white"/>
+                                </svg>
+
+                                IDIOMAS
+                            </h4>
                             <h3 className='upperTextCard-skills'>Tenho o desejo de aprimorar meu inglês, francês e
                                 espanhol, expandindo minhas habilidades.</h3>
                         </div>
 
-                        <img src={World} className="IconBackgroundCard2-skills" style={{width:'400px'}}></img>
+                        <img src={World} className="IconBackgroundCard2-skills" style={{width: '400px'}}></img>
 
 
                         <div className="divIconsCards-skills">
@@ -190,25 +171,14 @@ export default function Skills() {
                     </div>
                 </div>
 
-
             </div>
 
+            <Projects/>
 
-
-
-
-
-
-
-
-
-
-
-
-
+            <h1 style={{fontSize:'40px', marginBlock: '10px'}}>Fluxograma de Soluções</h1>
 
             <p id="textLineFlow-skills">Dominar habilidades técnicas é importante, mas saber aplicá-las para
-                resolver problemas é essencial. No desenvolvimento, cada desafio exige estratégia e prática.
+                resolver problemas é essencial para otimização de tempo e planejamento. No desenvolvimento, cada desafio exige estratégia e prática.
                 Aqui está como encaro problemas de programação no dia a dia:
             </p>
 

@@ -21,5 +21,6 @@ html {
 }
 
 html {
-  background: linear-gradient(135deg, #182023, #0d151c, #040a12, #070b12, #161b1b);
+    background: black;
+  /*background: linear-gradient(135deg, #182023, #0d151c, #040a12, #070b12, #161b1b);*/
 }

@@ -1,6 +1,5 @@
 #main-skills {
     color: white;
-    height: 1100px;
     width: 100vw;
     margin-block: 100px;
     display: flex;
@@ -14,6 +13,7 @@
 /**/
 #divIntroduction-skills {
     width: 100vw;
+    flex-wrap: wrap;
     height: 500px;
     display: flex;
     flex-direction: row;
@@ -179,7 +179,7 @@
 
 .divIconsCards-skills img{
     margin: 5px;
-    width: 15%;
+    width: 12%;
 }
 
 .divIconsCards-skills img{
@@ -254,23 +254,23 @@
     animation: up 0.3s ease-in-out forwards;
 }
 
-.lowerTextCard-skills {
-    background-color: #21244A;
+.contentCard-skills:hover > .lowerTextCard-skills {
+    background-color: #21244A !important;
 }
 
-.lowerTextCard2-skills {
-    background-color: #4a2121;
+.contentCard-skills:hover > .lowerTextCard2-skills {
+    background-color: #4a2121 !important;
 }
 
-.lowerTextCard3-skills {
-    background-color: #4a4021;
+.contentCard-skills:hover > .lowerTextCard3-skills {
+    background-color: #4a4021 !important;
 }
 
 .lowerTextCard-skills, .lowerTextCard2-skills, .lowerTextCard3-skills {
     padding: 5px 10px;
+    border: 1px solid white;
     display: flex;
     justify-content: center;
-    border-radius: 2px;
     margin-block: 20px;
     font-weight: 600;
 }
@@ -290,6 +290,8 @@
 
 #divLineFlow-skills {
     display: flex;
+    margin-top: 100px ;
+    margin-bottom: 150px;
     width: 100%;
     flex-direction: column;
     justify-content: center;
