@@ -11,10 +11,10 @@ import ImageFront from '../../../../../Assets/Images/Skills/pexels-format-380633
 import ImageBack from '../../../../../Assets/Images/Skills/pexels-pixabay-270557.jpg'
 import ImageHobbies from '../../../../../Assets/Images/Skills/pexels-tirachard-kumtanom-112571-574283.jpg'
 
-import Brazil from '../../../../../Assets/Images/Skills/pexels-format-380633-1029757.jpg'
-import USA from '../../../../../Assets/Images/Skills/pexels-format-380633-1029757.jpg'
-import France from '../../../../../Assets/Images/Skills/pexels-pixabay-270557.jpg'
-import Spain from '../../../../../Assets/Images/Skills/pexels-tirachard-kumtanom-112571-574283.jpg'
+import Brazil from '../../../../../Assets/Images/Skills/Flags/brazilFlag.jpg'
+import USA from '../../../../../Assets/Images/Skills/Flags/USAFlag.png'
+import France from '../../../../../Assets/Images/Skills/Flags/FranceFlag.svg'
+import Spain from '../../../../../Assets/Images/Skills/Flags/SpainFlag.png'
 
 import World from '../../../../../Assets/SVG Icons/World.svg';
 
@@ -53,6 +53,8 @@ export default function Skills() {
 
     return (
         <section id="main-skills">
+            <h1 style={{fontSize:'50px', marginBottom:'50px'}}>As habilidades que <span style={{textDecoration: 'underline'}}>moldam</span> meu trabalho</h1>
+
             <div id="divIntroduction-skills">
 
                 <div id="divCard-skills">
@@ -60,9 +62,9 @@ export default function Skills() {
                         <img src={ImageFront} className="photoCard-skills"></img>
 
                         <div className="divTextCards-skills">
-                            <h4 className="lowerTextCard-skills" style={{display: 'flex', alignItems:"center"}}>
+                            <h4 className="lowerTextCard-skills" style={{display: 'flex', alignItems: "center"}}>
                                 <svg width="20" height="20" viewBox="0 0 25 25" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg" style={{marginRight:'10px'}}>
+                                     xmlns="http://www.w3.org/2000/svg" style={{marginRight: '10px'}}>
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                           d="M7.03125 3.125C6.6 3.125 6.25 3.475 6.25 3.90625C6.25 4.33828 6.6 4.6875 7.03125 4.6875C7.4625 4.6875 7.8125 4.33828 7.8125 3.90625C7.8125 3.475 7.4625 3.125 7.03125 3.125ZM10.1562 3.125C9.725 3.125 9.375 3.475 9.375 3.90625C9.375 4.33828 9.725 4.6875 10.1562 4.6875C10.5875 4.6875 10.9375 4.33828 10.9375 3.90625C10.9375 3.475 10.5875 3.125 10.1562 3.125ZM23.4375 6.25H1.5625V3.125C1.5625 2.2625 2.2625 1.5625 3.125 1.5625H21.875C22.7375 1.5625 23.4375 2.2625 23.4375 3.125V6.25ZM23.4375 21.875C23.4375 22.7375 22.7375 23.4375 21.875 23.4375H3.125C2.2625 23.4375 1.5625 22.7375 1.5625 21.875V7.8125H23.4375V21.875ZM21.875 0H3.125C1.39922 0 0 1.39922 0 3.125V21.875C0 23.6008 1.39922 25 3.125 25H21.875C23.6008 25 25 23.6008 25 21.875V3.125C25 1.39922 23.6008 0 21.875 0ZM3.90625 3.125C3.475 3.125 3.125 3.475 3.125 3.90625C3.125 4.33828 3.475 4.6875 3.90625 4.6875C4.3375 4.6875 4.6875 4.33828 4.6875 3.90625C4.6875 3.475 4.3375 3.125 3.90625 3.125Z"
                                           fill="white"/>
@@ -100,9 +102,9 @@ export default function Skills() {
                         <img src={ImageBack} className="photoCard-skills"></img>
 
                         <div className="divTextCards-skills">
-                            <h4 className="lowerTextCard2-skills" style={{display: 'flex', alignItems:"center"}}>
+                            <h4 className="lowerTextCard2-skills" style={{display: 'flex', alignItems: "center"}}>
                                 <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg" style={{marginRight:'10px'}}>
+                                     xmlns="http://www.w3.org/2000/svg" style={{marginRight: '10px'}}>
                                     <path
                                         d="M10.0126 0.0732422L7.51257 17.5733L9.98745 17.9268L12.4874 0.42679L10.0126 0.0732422Z"
                                         fill="white"/>
@@ -113,8 +115,6 @@ export default function Skills() {
                                         d="M3.53554 9L6.14276 11.6073L4.375 13.375L0 9L4.375 4.625L6.14276 6.39277L3.53554 9Z"
                                         fill="white"/>
                                 </svg>
-
-
                                 BACK-END e DBs
                             </h4>
                             <h3 className='upperTextCard-skills'>Desenvolvendo APIs e bancos de dados
@@ -140,10 +140,10 @@ export default function Skills() {
                         <img src={ImageHobbies} className="photoCard-skills"></img>
 
                         <div className="divTextCards-skills">
-                            <h4 className="lowerTextCard3-skills" style={{display: 'flex', alignItems:"center"}}>
+                            <h4 className="lowerTextCard3-skills" style={{display: 'flex', alignItems: "center"}}>
 
                                 <svg width="26" height="21" viewBox="0 0 26 21" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg" style={{marginRight:'10px'}}>
+                                     xmlns="http://www.w3.org/2000/svg" style={{marginRight: '10px'}}>
                                     <path
                                         d="M15.6831 14.2984C17.1048 13.7379 18.3602 12.8246 19.3311 11.6445C20.1936 10.6245 20.6667 9.33206 20.6667 7.9964C20.6667 6.66073 20.1936 5.36826 19.3311 4.34834C18.3591 3.17156 17.1038 2.2614 15.6831 1.70349C14.0923 1.05133 12.3861 0.727163 10.667 0.750438C8.9466 0.732945 7.24042 1.06332 5.65091 1.72173C4.22926 2.27786 2.97346 3.18832 2.00285 4.36658C1.14606 5.3898 0.673494 6.68009 0.666748 8.01464C0.666719 9.15693 1.0186 10.2715 1.67452 11.2067C2.39157 12.2444 3.33691 13.1039 4.43793 13.7193C4.35294 13.9323 4.25705 14.1408 4.15065 14.344C4.05728 14.526 3.94899 14.6998 3.82688 14.8639L3.50768 15.2743C3.39261 15.421 3.26929 15.5611 3.13831 15.6938C2.96959 15.8716 2.86014 15.9902 2.81454 16.0495C2.76894 16.1088 2.81454 16.0495 2.75526 16.1133C2.69598 16.1772 2.69598 16.1863 2.69142 16.1817C2.68686 16.1772 2.69142 16.1817 2.6367 16.2547L2.58654 16.3322L2.55006 16.4006C2.53745 16.4283 2.52826 16.4574 2.5227 16.4873C2.52022 16.5176 2.52022 16.5481 2.5227 16.5785C2.51586 16.6085 2.51586 16.6396 2.5227 16.6697C2.53801 16.7859 2.59467 16.8927 2.6823 16.9706C2.76307 17.0419 2.86645 17.0823 2.97415 17.0846H3.01519C3.4712 17.0162 3.89528 16.9387 4.23729 16.8566C5.6508 16.4939 6.98606 15.8757 8.17719 15.0326C8.99793 15.1919 9.83106 15.2788 10.667 15.2925C12.389 15.3028 14.0952 14.9646 15.6831 14.2984Z"
                                         fill="white"/>
@@ -162,10 +162,10 @@ export default function Skills() {
 
 
                         <div className="divIconsCards-skills">
-                            <img src={React}/>
-                            <img src={JS}/>
-                            <img src={SASS}/>
-                            <img src={CSS}/>
+                            <img src={Brazil}/>
+                            <img src={USA}/>
+                            <img src={France}/>
+                            <img src={Spain}/>
                         </div>
 
                     </div>
@@ -175,10 +175,11 @@ export default function Skills() {
 
             <Projects/>
 
-            <h1 style={{fontSize:'40px', marginBlock: '10px'}}>Fluxograma de Soluções</h1>
+            <h1 style={{fontSize: '50px', marginBlock: '10px'}} id="titleLineFlow-skills">Fluxograma de Soluções</h1>
 
             <p id="textLineFlow-skills">Dominar habilidades técnicas é importante, mas saber aplicá-las para
-                resolver problemas é essencial para otimização de tempo e planejamento. No desenvolvimento, cada desafio exige estratégia e prática.
+                resolver problemas é essencial para otimização de tempo e planejamento. No desenvolvimento, cada desafio
+                exige estratégia e prática.
                 Aqui está como encaro problemas de programação no dia a dia:
             </p>
 
@@ -192,7 +193,7 @@ export default function Skills() {
                 <svg width="3120" height="505" viewBox="0 0 3120 505" fill="none" xmlns="http://www.w3.org/2000/svg"
                      id='svgLine-skills'>
                     <motion.path initial={{pathLength: 0}} animate={{pathLength: 1}}
-                                 transition={{duration: 4, ease: 'easeInOut'}}
+                                 transition={{duration: 5, ease: 'easeInOut'}}
                                  d="M1 300.392C124.5 301.726 342.824 304.106 407.5 247.892C461 201.392 428 102.846 366 113.892C279 129.392 264.5 279.892 336 357.392C407.5 434.892 537 337.892 526 225.892C515 113.892 510 39.3925 423 10.8925C336 -17.6075 190.725 60.8653 137 168.892C90.5 262.392 89.1 409.392 198 431.392C297 451.392 455.666 432.329 541.5 339.892C606.5 269.892 641.5 147.051 590.5 94.8924C557.744 61.3924 502.693 74.8921 489.5 168.892C473.5 282.892 469.765 342.409 428 350.892C396 357.392 347 330.392 356.5 233.892C366 137.392 573 50.8924 619 211.892C665 372.892 603.745 462.489 568.5 482.392C526 506.392 491 499.392 480 439.392C469 379.392 461 61.3924 356.5 61.3924C297.456 61.3924 275 113.892 287 156.392C311.915 244.633 463 320.892 739.5 300.392C772.167 298.559 938.272 293.816 978 300.392C1083.72 317.892 1090.5 409.392 1167.5 409.392C1244.5 409.392 1306.03 384.611 1304.5 309.392C1302.97 234.174 1401.5 206.892 1446.5 262.392C1491.5 317.892 1521 445.892 1418.5 451.392C1316 456.892 1216 404.892 1218 326.392C1220 247.892 1277.5 191.892 1253 139.392C1228.5 86.8924 1170.5 76.3924 1135.5 100.892C1100.5 125.392 1046 205.392 1100.5 233.892C1155 262.392 1201.5 223.392 1253 211.892C1304.5 200.392 1425.58 258.549 1378 317.892C1322.04 387.694 1191.6 411.178 1135.5 381.892C1079.4 352.607 1053.38 276.923 1135.5 269.892C1208.26 263.663 1491 304.5 1540.5 300.392C1642.33 300.392 1847.3 300.392 1852.5 300.392C1859 300.392 1962.5 317.892 1962.5 262.392C1962.5 206.892 1974 170.392 2029.5 160.892C2085 151.392 2114.35 226.092 2085 262.392C2047 309.392 2060 270.892 1985.5 381.892C1911 492.892 2132.5 544.392 2175 451.392C2217.5 358.392 2104 341.892 2131 298.392C2158 254.892 2196.5 300.392 2263.5 300.392C2330.5 300.392 2835.33 301 3107 301L3099 312.5C3103.67 308.833 3114.6 302.5 3115 300.5C3115.4 298.5 3102.17 291.333 3097.5 288.5L3110.5 297"
                                  stroke="white" stroke-width="10"/>
                 </svg>

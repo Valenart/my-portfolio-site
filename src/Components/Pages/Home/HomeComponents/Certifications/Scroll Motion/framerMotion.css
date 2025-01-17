@@ -1,5 +1,7 @@
 .parallax {
-    overflow: hidden; /* Garante que o texto fora dos limites não seja visível */
+    opacity: 0.5;
+    color: white;
+    overflow: hidden;
     position: relative;
     white-space: nowrap;
     display: flex;
@@ -8,11 +10,17 @@
 }
 
 .parallax .scroller {
+    font-weight: 800;
     display: flex;
     align-items: center;
     white-space: nowrap;
-    font-weight: 600;
     text-transform: uppercase;
     font-size: 80px;
     will-change: transform;
+}
+
+@media (max-width: 1024px) {
+    .parallax {
+        display: none;
+    }
 }

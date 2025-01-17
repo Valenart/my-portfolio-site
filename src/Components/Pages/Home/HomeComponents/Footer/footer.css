@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #main-footer {
     border-top: 1px solid #737373;
     height: 250px;
@@ -10,6 +14,16 @@
 
 #iconsContainer-footer, #containerMiddle-footer, #containerContact-footer {
     display: flex;
+}
+
+#containerContact-footer li a{
+    display: flex;
+    align-items: center;
+}
+
+#containerContact-footer li a {
+    text-decoration: none;
+    color: white;
 }
 
 #divIcons-footer a:hover{

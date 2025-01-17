@@ -107,7 +107,7 @@
 }
 
 .repsGithub-projects:hover {
-    background-color: #0e0e0e;
+    background-color: #090a15;
     animation: up 0.3s ease-in-out forwards;
 }
 
@@ -148,12 +148,18 @@
         flex-direction: column;
     }
 
+    #photoPerfilGithub-projects {
+        width: 100px;
+        height: 100px;
+    }
+
     #mainTextPerfilGitHub {
         display: none;
     }
 
     #divPerfilGithub-projects {
         margin-block: 20px;
+        overflow: initial;
     }
 
     #listLanguagesAPI-projects {
@@ -177,13 +183,18 @@
     }
 
     #altTextPerfilGitHub {
-        display: inline;
+        display: flex;
+        text-align: center;
     }
 }
 
 @media (max-width: 1024px) {
     #divRepGithub-projects {
         display: none;
+    }
+
+    #main-skills {
+        margin: 0;
     }
 
     #main-projects {

@@ -1,7 +1,7 @@
 #main-certifications {
     width: 80vw;
     height: 560px;
-    margin-block: 100px;
+    margin-block: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -10,6 +10,7 @@
 
 #containerText-certifications {
     border: 1px solid white;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -28,7 +29,17 @@
 
 #div1-certifications, #div2-certifications, #div3-certifications {
     display: flex;
+    width: 100%;
     flex-direction: row;
+}
+
+#div1-certifications img, #div2-certifications img, #div3-certifications img {
+    display: flex;
+    object-fit: cover;
+    width: 45%;
+    margin: 5px;
+    flex-direction: row;
+    cursor: pointer;
 }
 
 .Logotext-certifications {
@@ -38,10 +49,14 @@
 }
 
 .certImages-certfications {
-    width: 130%;
-    height: 180px;
-    aspect-ratio: 1.29;
     object-fit: contain;
+    box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.2);
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.certImages-certfications:hover {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.83);
+    transition: box-shadow 0.2s ease-in-out;
 }
 
 /*********BLACK SQUARE PHOTOS*********/
@@ -49,11 +64,11 @@
     position: absolute;
     display: flex;
     height: 590px;
-    width: clamp(200px, 40vw, 700px);
+    width: clamp(200px, 40vw, 720px);
     transform: translate(4%, -1%);
-    left: -10px;
+    left: 0px;
     z-index: -2;
-    background-color: black;
+    background-color: rgb(5, 17, 32);
 }
 
 /*******************************/
@@ -77,13 +92,14 @@
 
     #containerText-certifications {
         width: 43%;
+        border: none;
     }
 }
 
 @media (max-width: 1370px) {
     #div1-certifications img, #div2-certifications img, #div3-certifications img{
-        object-fit: contain;
-        width: 90%;
+        object-fit: cover;
+        width: 45%;
     }
 }
 
@@ -94,7 +110,7 @@
     }
 
     #div1-certifications, #div2-certifications, #div3-certifications{
-        object-fit: contain;
+        object-fit: cover;
     }
 }
 
@@ -103,8 +119,15 @@
         font-size: 35px;
     }
 
+    #containerText-certifications {
+        border: none;
+    }
     #containerCert-certifications {
         width: 45%;
+    }
+
+    .certImages-certfications {
+        height: auto;
     }
 
     #darkSquare-certifications {
@@ -112,8 +135,7 @@
     }
 
     #div1-certifications img, #div2-certifications img, #div3-certifications img{
-        object-fit: contain;
-        width: 90%;
+        object-fit: cover;
     }
 
     #main-certifications {
@@ -133,9 +155,12 @@
         width: 80%;
     }
 
+
+
     #containerCert-certifications {
         display: flex;
-        width: 80%;
+        width: clamp(280px, 50%, 700px);
+        height: auto;
         align-items: center;
         flex-direction: column;
     }
@@ -146,18 +171,13 @@
     }
 
     #div1-certifications, #div2-certifications, #div3-certifications{
-        width: 50vw;
-        height: 20vw;
         margin-block: 5px;
         justify-content: center;
     }
 
-    #div1-certifications a, #div2-certifications a, #div3-certifications a{
-        display: inline-flex;
-        width: 100%;
-    }
-
     #div1-certifications img, #div2-certifications img, #div3-certifications img{
-        height: auto;
+        width: 45%;
     }
 }
+
+@media (max-width: 799px) {}

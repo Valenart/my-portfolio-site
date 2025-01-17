@@ -35,7 +35,7 @@ export default function Projects() {
             return {
                 width: `${porcentagem}%`,
                 height: '8px',
-                backgroundColor: '#F5C648',
+                backgroundColor: '#08274d',
                 marginBottom: '5px',
             };
         };

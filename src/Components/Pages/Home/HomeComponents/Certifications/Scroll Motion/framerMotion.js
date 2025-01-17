@@ -52,6 +52,10 @@ function ParallaxText({ children, baseVelocity = 100 }) {
             <motion.div className="scroller" style={{ x }}>
                 {children}
                 {children}
+                {children}
+                {children}
+                {children}
+                {children}
             </motion.div>
         </div>
     );
@@ -60,7 +64,11 @@ function ParallaxText({ children, baseVelocity = 100 }) {
 export default function FramerMotion() {
     return (
         <section>
-            <ParallaxText baseVelocity={0.5} >
+            <ParallaxText baseVelocity={-1} >
+                &nbsp;CERTIFICATIONS&nbsp;·
+            </ParallaxText>
+            <ParallaxText baseVelocity={1} >
+                &nbsp;NETWORKING&nbsp;·
             </ParallaxText>
         </section>
     );

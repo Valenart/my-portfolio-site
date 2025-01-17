@@ -28,7 +28,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20%;
+    width: clamp(280px, 20%, 1000px);
     height: 500px;
     background-color: rgba(0, 0, 0, 0);
     z-index: 10;
@@ -324,9 +324,14 @@
 
 #svgLine-skills {
     height: 200px;
-    width: 60vw;
+    width: clamp(450px, 70vw, 1200px);
 }
 
+@media (max-width: 800px) {
+    #divLineFlow-skills, #titleLineFlow-skills, #textLineFlow-skills {
+        display: none;
+    }
+}
 /**/
 
 @keyframes up {
@@ -368,5 +373,26 @@
     100% {
 
         opacity: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    #main-skills {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    #divIntroduction-skills {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    #divCard-skills {
+        width: clamp(300px, 25%, 1000px);
     }
 }

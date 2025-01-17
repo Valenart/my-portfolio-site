@@ -84,11 +84,11 @@ export default function Footer () {
 
             <div id="containerContact-footer">
                 <ul>
-                    <li>Home <MdOutlineKeyboardArrowRight/></li>
-                    <li>Sobre mim <MdOutlineKeyboardArrowRight/></li>
-                    <li>Habilidades <MdOutlineKeyboardArrowRight/></li>
-                    <li>Certificações <MdOutlineKeyboardArrowRight/></li>
-                    <li>Networking <MdOutlineKeyboardArrowRight/></li>
+                    <li><a href="#main-navbar">Home <MdOutlineKeyboardArrowRight/></a></li>
+                    <li><a href="#frame-Perfil">Sobre mim <MdOutlineKeyboardArrowRight/></a></li>
+                    <li><a href="#main-skills">Habilidades <MdOutlineKeyboardArrowRight/></a></li>
+                    <li><a href="#main-certifications">Certificações <MdOutlineKeyboardArrowRight/></a></li>
+                    <li><a href="#main-networking">Networking <MdOutlineKeyboardArrowRight/></a></li>
                 </ul>
                 <img alt={"PNG Minha Assinatura"} src={MySign} id="mySign-footer"
                      data-aos="zoom-out"

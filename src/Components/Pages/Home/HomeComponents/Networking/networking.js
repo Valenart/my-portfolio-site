@@ -1,14 +1,14 @@
 /*IMPORT IMAGES AND COMPONENTS*/
 
-
 import LinhaHorizontal from "../../../../GlobalComponents/Components Perfil/LinhaHorizontal/linhaHorizontalMoldura";
 import LinhaVertical from "../../../../GlobalComponents/Components Perfil/Linha Vertical/LinhaVerticalMoldura";
-import LogoCasaOracle from '../../../../../Assets/Images/PerfilENetworking/LogoCasaOracle.jpeg'
-import OraclePhoto1 from '../../../../../Assets/Images/PerfilENetworking/OracleOffice1.jpeg'
-import OraclePhoto2 from '../../../../../Assets/Images/PerfilENetworking/OracleOffice2.jpeg'
-import PowerBISENAI from '../../../../../Assets/Images/PerfilENetworking/PowerBISENAI.jpeg'
-import VivoMeet from '../../../../../Assets/Images/PerfilENetworking/VivoMeetPhoto.jpeg'
-import VivoPhotoOnLogo from '../../../../../Assets/Images/PerfilENetworking/VivoPhoto.jpeg'
+import LogoCasaOracle from '../../../../../Assets/Images/PerfilENetworking/LogoCasaOracle.jpeg';
+import OraclePhoto1 from '../../../../../Assets/Images/PerfilENetworking/OracleOffice1.jpeg';
+import OraclePhoto2 from '../../../../../Assets/Images/PerfilENetworking/OracleOffice2.jpeg';
+import PowerBISENAI from '../../../../../Assets/Images/PerfilENetworking/PowerBISENAI.jpeg';
+import VivoMeet from '../../../../../Assets/Images/PerfilENetworking/VivoMeetPhoto.jpeg';
+import VivoPhotoOnLogo from '../../../../../Assets/Images/PerfilENetworking/VivoPhoto.jpeg';
+import FramerMotion from '../Certifications/Scroll Motion/framerMotion';
 import ButtonNetworking from "../../../../GlobalComponents/Buttons/custom buttons/buttonNetworking";
 
 /*LIBRARIES REACT IMPORTS*/
@@ -48,6 +48,8 @@ export default function Networking() {
     return (
         <section style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems:'center'}} id='main-networking'>
 
+            <FramerMotion/>
+
             <div id="frame-networking"
                  data-aos="fade-up"
                  data-aos-offset="200"
@@ -85,82 +87,43 @@ export default function Networking() {
                     <div id="photosContainer-networking">
 
                         <div id='photoColumn1-networking'>
-                            <a href="https://www.linkedin.com/posts/richardvalentim_oracle-inovaaexaeto-tecnologia-activity-7134217622664994816-TKQE?utm_source=share&utm_medium=member_desktop"
-                               target="_blank" rel="noopener noreferrer"
-                               style={{display: "inline-block", width: "100%", height: "100%", top: "5px"}}>
+                            {/*https://www.linkedin.com/posts/richardvalentim_oracle-inovaaexaeto-tecnologia-activity-7134217622664994816-TKQE?utm_source=share&utm_medium=member_desktop"*/}
                                 <img alt={"Photo on Oracle's Building"} src={OraclePhoto2}
-                                     className="normalImage-networking"
-                                     data-aos="fade-up"
-                                     data-aos-offset="200"
-                                     data-aos-delay="100"
-                                     data-aos-duration="1000"
-                                     data-aos-easing="ease-out">
+                                     className="normalImage-networking">
                                 </img>
-                            </a>
 
-                            <a href="https://www.linkedin.com/posts/richardvalentim_oracle-inovaaexaeto-tecnologia-activity-7134217622664994816-TKQE?utm_source=share&utm_medium=member_desktop"
-                               target="_blank" rel="noopener noreferrer"
-                               className="linksImage-networking">
-                                <img alt={"Casa Oracle Logo"} src={LogoCasaOracle} className="smallImage-networking"
-                                     >
+
+                            {/*"https://www.linkedin.com/posts/richardvalentim_oracle-inovaaexaeto-tecnologia-activity-7134217622664994816-TKQE?utm_source=share&utm_medium=member_desktop"*/}
+                                <img alt={"Casa Oracle Logo"} src={LogoCasaOracle} className="smallImage-networking">
                                 </img>
-                            </a>
 
-                            <a href="https://www.linkedin.com/posts/richardvalentim_fundaaexaetotelefaeknicavivo-inovaaexaetotecnolaejgica-activity-7225624648531513344-MSsW?utm_source=share&utm_medium=member_desktop"
-                               target="_blank" rel="noopener noreferrer"
-                               style={{display: "inline-block", width: "100%", height: "97%", top: "5px"}}>
+                            {/*"https://www.linkedin.com/posts/richardvalentim_fundaaexaetotelefaeknicavivo-inovaaexaetotecnolaejgica-activity-7225624648531513344-MSsW?utm_source=share&utm_medium=member_desktop"*/}
+
                                 <img alt={"Photo with DEV's and Leaders Vivo"} src={VivoMeet}
-                                     className="normalImage-networking"
-                                     data-aos="fade-up"
-                                     data-aos-offset="200"
-                                     data-aos-delay="500"
-                                     data-aos-duration="1000"
-                                     data-aos-easing="ease-out">
+                                     className="normalImage-networking">
                                 </img>
-                            </a>
+
 
                         </div>
                         <div id='photoColumn2-networking'>
 
-                            <a href="https://www.linkedin.com/posts/richardvalentim_powerbi-dataanalytics-senai-activity-7101045755632611328-tRkG?utm_source=share&utm_medium=member_desktop"
-                               target="_blank" rel="noopener noreferrer"
-                               style={{display: "inline-block", width: "100%", height: "74%", top: "5px"}}>
+                            {/*"https://www.linkedin.com/posts/richardvalentim_powerbi-dataanalytics-senai-activity-7101045755632611328-tRkG?utm_source=share&utm_medium=member_desktop"*/}
                                 <img alt={"Photo SENAI group course"} src={PowerBISENAI}
-                                     className="smallImage-networking"
-                                     data-aos="fade-up"
-                                     data-aos-offset="200"
-                                     data-aos-delay="200"
-                                     data-aos-duration="1000"
-                                     data-aos-easing="ease-out">
+                                     className="smallImage-networking">
                                 </img>
-                            </a>
 
-                            <a href="https://www.linkedin.com/posts/richardvalentim_fundaaexaetotelefaeknicavivo-inovaaexaetotecnolaejgica-activity-7225624648531513344-MSsW?utm_source=share&utm_medium=member_desktop"
-                               target="_blank" rel="noopener noreferrer"
-                               style={{display: "inline-block", width: "100%", height: "87%", top: "5px"}}>
+
+                            {/*"https://www.linkedin.com/posts/richardvalentim_fundaaexaetotelefaeknicavivo-inovaaexaetotecnolaejgica-activity-7225624648531513344-MSsW?utm_source=share&utm_medium=member_desktop"*/}
                                 <img alt={"Photo in front of Vivo Logo"} src={VivoPhotoOnLogo}
-                                     className="normalImage-networking"
-                                     data-aos="fade-up"
-                                     data-aos-offset="200"
-                                     data-aos-delay="400"
-                                     data-aos-duration="1000"
-                                     data-aos-easing="ease-out">
+                                     className="normalImage-networking">
                                 </img>
-                            </a>
 
-                                <a href="https://www.linkedin.com/posts/richardvalentim_oracle-inovaaexaeto-tecnologia-activity-7134217622664994816-TKQE?utm_source=share&utm_medium=member_desktop"
-                                   target="_blank" rel="noopener noreferrer"
-                                   style={{display: "inline-block", width: "100%", height: "74%", top: "5px"}}>
+                            {/*"https://www.linkedin.com/posts/richardvalentim_oracle-inovaaexaeto-tecnologia-activity-7134217622664994816-TKQE?utm_source=share&utm_medium=member_desktop"*/}
                                     <img alt={"Photo on Oracle's Office"} src={OraclePhoto1}
-                                         className="smallImage-networking"
-                                         data-aos="fade-up"
-                                         data-aos-offset="200"
-                                         data-aos-delay="600"
-                                         data-aos-duration="1000"
-                                         data-aos-easing="ease-out">
+                                         className="smallImage-networking">
 
                                     </img>
-                                </a>
+
 
                         </div>
                         <div id="darkSquare-networking"></div>

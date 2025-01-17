@@ -14,8 +14,6 @@ import FiapLogo from '../../../../../Assets/Png/Icons/Fiap.png';
 import GoogleLogo from '../../../../../Assets/Png/Icons/google.png';
 import MicrosoftLogo from '../../../../../Assets/Png/Icons/Microsoft.png';
 
-
-
 /*IMPORT CSS*/
 import "./certificacoes.css";
 
@@ -24,6 +22,12 @@ import AOS from 'aos';
 import React, { useState, useEffect } from 'react';
 
 export default function Certificacoes() {
+
+    const arrayCert = [CiscoCert,Cisco2Cert,Google1Cert,Google2Cert, MetaCert, FiapCert];
+
+    const handleOpenWindow2 = (numlink) => {
+        window.open(`${arrayCert[numlink]}`, "_blank");
+    };
 
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 1422);
 
@@ -149,56 +153,54 @@ export default function Certificacoes() {
                  data-aos-duration="1000"
                  data-aos-easing="ease-out">
                 <div id="div1-certifications">
-                    <a href={Cisco2Cert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+
                         <img className="certImages-certfications"
-                             style={{width: '95%'}}
                              src={Cisco2Cert}
                              alt="Certificado Cisco2"
+                             onClick={() => handleOpenWindow2(1)}
                         />
-                    </a>
 
-                    <a href={Google1Cert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+
+
                         <img className="certImages-certfications"
-                             style={{width: '95%'}}
                              src={Google1Cert}
                              alt="Certificado Google1"
+                             onClick={() => handleOpenWindow2(2)}
                         />
-                    </a>
+
                 </div>
 
                 <div id="div2-certifications">
-                    <a href={Google2Cert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+
                         <img className="certImages-certfications"
-                             style={{width: '95%'}}
                              src={Google2Cert}
                              alt="Certificado Google2"
+                             onClick={() => handleOpenWindow2(3)}
                         />
-                    </a>
 
-                    <a href={FiapCert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
                         <img className="certImages-certfications"
-                             style={{width: '95%'}}
                              src={FiapCert}
                              alt="Certificado Java Fiap"
+                             onClick={() => handleOpenWindow2(5)}
                         />
-                    </a>
+
                 </div>
 
                 <div id="div3-certifications">
-                    <a href={MetaCert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+
                         <img className="certImages-certfications"
-                             style={{width: '95%'}}
                              src={MetaCert}
                              alt="Certificado Meta"
+                             onClick={() => handleOpenWindow2(4)}
                         />
-                    </a>
-                    <a href={CiscoCert} target="_blank" rel="noopener noreferrer" className="certLink-certifications">
+
+
                         <img className="certImages-certfications"
-                             style={{width: '95%'}}
                              src={CiscoCert}
                              alt="Certificado Cisco1"
+                             onClick={() => handleOpenWindow2(0)}
                         />
-                    </a>
+
                 </div>
             </div>
             <div id="darkSquare-certifications"></div>
