@@ -1,7 +1,6 @@
-import Test from '../../../../GlobalComponents/Test/test'
 import { motion } from "motion/react";
 import './skills.css';
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import AOS from 'aos';
 
 
@@ -9,7 +8,7 @@ import Projects from '../Projects/Projects';
 
 import ImageFront from '../../../../../Assets/SVG Icons/Images SVG/Front-End.svg'
 import ImageBack from '../../../../../Assets/SVG Icons/Images SVG/Programming.svg'
-import ImageHobbies from '../../../../../Assets/SVG Icons/Images SVG/Conversation.svg'
+import ImageLanguages from '../../../../../Assets/SVG Icons/Images SVG/Conversation.svg'
 
 import Brazil from '../../../../../Assets/Images/Skills/Flags/brazilFlag.jpg'
 import USA from '../../../../../Assets/Images/Skills/Flags/USAFlag.png'
@@ -59,7 +58,7 @@ export default function Skills() {
 
                 <div id="divCard-skills">
                     <div className="contentCard-skills">
-                        <img src={ImageFront} className="photoCard-skills"></img>
+                        <img src={ImageFront} alt="imagem Front" className="photoCard-skills"></img>
 
                         <div className="divTextCards-skills">
                             <h4 className="lowerTextCard-skills" style={{display: 'flex', alignItems: "center"}}>
@@ -87,11 +86,11 @@ export default function Skills() {
                         </svg>
 
                         <div className="divIconsCards-skills">
-                            <img src={React}/>
-                            <img src={JS}/>
-                            <img src={SASS}/>
-                            <img src={CSS}/>
-                            <img src={HTML}/>
+                            <img alt="React Icon" src={React}/>
+                            <img alt="JS Icon" src={JS}/>
+                            <img alt="SASS Icon" src={SASS}/>
+                            <img alt="CSS Icon" src={CSS}/>
+                            <img alt="HMTL Icon" src={HTML}/>
                         </div>
 
                     </div>
@@ -99,7 +98,7 @@ export default function Skills() {
 
                 <div id="divCard-skills">
                     <div className="contentCard-skills">
-                        <img src={ImageBack} className="photoCard-skills"></img>
+                        <img src={ImageBack} alt="imagem Back" className="photoCard-skills" ></img>
 
                         <div className="divTextCards-skills">
                             <h4 className="lowerTextCard2-skills" style={{display: 'flex', alignItems: "center"}}>
@@ -121,15 +120,15 @@ export default function Skills() {
                                 robustos para intregrações com front-end.</h3>
                         </div>
 
-                        <img src={Kotlin} className="IconBackgroundCard2-skills" style={{width: '400px'}}></img>
+                        <img src={Kotlin} alt="Kotlin Icon" className="IconBackgroundCard2-skills" style={{width: '400px'}}></img>
 
                         <div className="divIcons2Cards-skills">
-                            <img src={Git}/>
-                            <img src={Java}/>
-                            <img src={Kotlin}/>
-                            <img src={Python}/>
-                            <img src={MySQL}/>
-                            <img src={PostgreSQL}/>
+                            <img alt="Git Icon" src={Git}/>
+                            <img alt="Java Icon" src={Java}/>
+                            <img alt="Kotlin Icon" src={Kotlin}/>
+                            <img alt="Python Icon" src={Python}/>
+                            <img alt="MySQL Icon" src={MySQL}/>
+                            <img alt="Postgre Icon" src={PostgreSQL}/>
                         </div>
 
                     </div>
@@ -137,7 +136,7 @@ export default function Skills() {
 
                 <div id="divCard-skills">
                     <div className="contentCard-skills">
-                        <img src={ImageHobbies} className="photoCard-skills"></img>
+                        <img src={ImageLanguages} alt="imagem Idiomas" className="photoCard-skills"></img>
 
                         <div className="divTextCards-skills">
                             <h4 className="lowerTextCard3-skills" style={{display: 'flex', alignItems: "center"}}>
@@ -158,14 +157,14 @@ export default function Skills() {
                                 espanhol, expandindo minhas habilidades.</h3>
                         </div>
 
-                        <img src={World} className="IconBackgroundCard2-skills" style={{width: '400px'}}></img>
+                        <img src={World} alt="World Icon" className="IconBackgroundCard2-skills" style={{width: '400px'}}></img>
 
 
                         <div className="divIconsCards-skills">
-                            <img src={Brazil}/>
-                            <img src={USA}/>
-                            <img src={France}/>
-                            <img src={Spain}/>
+                            <img alt="Brazil Flag" src={Brazil}/>
+                            <img alt="USA Flag" src={USA}/>
+                            <img alt="France Flag" src={France}/>
+                            <img alt="Spain Flag" src={Spain}/>
                         </div>
 
                     </div>

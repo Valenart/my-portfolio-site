@@ -28,10 +28,6 @@ export default function Projects() {
         window.open("https://github.com/Valenart", "_blank");
     }
 
-    const handleOpenWindowRep = (linkRep = '') => {
-        window.open(`${linkRep}`, "_blank");
-    }
-
         const getEstilos = (porcentagem) => {
 
             return {
@@ -42,7 +38,7 @@ export default function Projects() {
             };
         };
 
-    const [dados, setDados] = useState([]);
+    const [setDados] = useState([]);
     const [porcentagens, setPorcentagens] = useState({});
 
 
@@ -118,7 +114,6 @@ export default function Projects() {
     }, []);
 
 
-
     return (
         <section id="main-projects">
             <div id="divPerfilGithub-projects">
@@ -165,7 +160,7 @@ export default function Projects() {
                         <p>Meu README</p>
                     </div>
 
-                    <img src={README} onClick={() => handleOpenWindow2(0)}></img>
+                    <img alt="Readme Mini" src={README} onClick={() => handleOpenWindow2(0)}></img>
                 </div>
 
                 <div className="repsGithub-projects">
@@ -175,7 +170,7 @@ export default function Projects() {
                         <p>Meu site portfólio</p>
                     </div>
 
-                    <img src={Portfolio} onClick={() => handleOpenWindow2(3)}></img>
+                    <img alt="Portfolio Mini" src={Portfolio} onClick={() => handleOpenWindow2(3)}></img>
                 </div>
 
                 <div className="repsGithub-projects">
@@ -185,7 +180,7 @@ export default function Projects() {
                         <p>Sites dos influencers da Mith</p>
                     </div>
 
-                    <img src={Mith} onClick={() => handleOpenWindow2(1)}></img>
+                    <img alt="Mith Mini" src={Mith} onClick={() => handleOpenWindow2(1)}></img>
                 </div>
 
                 <div className="repsGithub-projects">
@@ -195,7 +190,7 @@ export default function Projects() {
                         <p>Meu projeto da Faculdade: Jogo Jokempô usando cliente/servidor!</p>
                     </div>
 
-                    <img src={Jokempo} onClick={() => handleOpenWindow2(2)}></img>
+                    <img alt="Jokempo Mini" src={Jokempo} onClick={() => handleOpenWindow2(2)}></img>
                 </div>
 
             </div>
