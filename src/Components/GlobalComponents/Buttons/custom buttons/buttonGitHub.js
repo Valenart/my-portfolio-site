@@ -10,7 +10,7 @@ export default function GithubButton ({text}) {
 
     return (
         <div id="divIntroGitHub-button">
-            <button id="buttonIntroGitHub-button" onClick={handleOpenWindow} style={{cursor: "pointer"}}>
+            <button id="buttonIntroGitHub-button" onClick={handleOpenWindow} style={{cursor: "pointer", marginRight: '5px'}}>
                 {text}
                 <RxGithubLogo id="iconIntroGitHub-button"/>
             </button>

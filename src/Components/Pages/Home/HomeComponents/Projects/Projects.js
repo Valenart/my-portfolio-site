@@ -6,6 +6,7 @@ import { IoLogoGithub } from "react-icons/io5";
 import { MdArrowOutward } from "react-icons/md";
 
 import RichardPhoto from "../../../../../Assets/Images/PerfilENetworking/RichardPhotoPerfil.jpg"
+import Portfolio from "../../../../../Assets/Images/Projects/my-portfolio-site.png";
 import Jokempo from "../../../../../Assets/Images/Projects/Jokempo2.jpg"
 import Mith from "../../../../../Assets/Images/Projects/Mith.jpg"
 import README from "../../../../../Assets/Images/Projects/README.jpg"
@@ -15,7 +16,8 @@ export default function Projects() {
     const arrayLinks = [
         'https://github.com/Valenart/Valenart',
         'https://lnkd.in/dUTvGfYa',
-        'https://github.com/Valenart/jokenpo'
+        'https://github.com/Valenart/jokenpo',
+        'https://github.com/Valenart/my-portfolio-site'
     ];
 
     const handleOpenWindow2 = (numlink) => {
@@ -47,7 +49,7 @@ export default function Projects() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const token = "/";
+            const token = process.env.REACT_APP_API_KEY;
             const headers = { Authorization: `Bearer ${token}` };
 
             try {
@@ -173,7 +175,7 @@ export default function Projects() {
                         <p>Meu site portfólio</p>
                     </div>
 
-                    <img src={'/'}></img>
+                    <img src={Portfolio} onClick={() => handleOpenWindow2(3)}></img>
                 </div>
 
                 <div className="repsGithub-projects">

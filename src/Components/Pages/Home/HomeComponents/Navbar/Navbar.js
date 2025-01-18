@@ -1,17 +1,17 @@
 import "./Navbar.css";
 import MyLogo from "../../../../../Assets/Png/MySign/MyLogoWhite.png";
-import React from "react";
+import React, {useEffect, useState} from "react";
 
 import ButtonFooter from "../../../../GlobalComponents/Buttons/custom buttons/buttonFooter";
 import Underline from "../../../../GlobalComponents/Underline/underline";
 
 export default function Navbar () {
+
     return (
         <nav id="main-navbar">
-            <img alt="MyLogo" src={MyLogo} id="mylogo"></img>
+            <img alt="MyLogo" src={MyLogo} id="mylogo-navbar"></img>
 
             <ul
-                style={{listStyleType: 'none', display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}
                 id="list-navbar">
                 <li>
                     <Underline textNavbar="Sobre mim" linkRef="/"
@@ -40,7 +40,7 @@ export default function Navbar () {
             </ul>
 
 
-            <div id="divButton-navbar" style={{display: 'flex', justifyContent: 'center'}}>
+            <div id="divButton-navbar">
                 <ButtonFooter text="Contate-me"/>
             </div>
 

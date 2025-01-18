@@ -90,14 +90,9 @@ export default function Footer () {
                     <li><a href="#main-certifications">Certificações <MdOutlineKeyboardArrowRight/></a></li>
                     <li><a href="#main-networking">Networking <MdOutlineKeyboardArrowRight/></a></li>
                 </ul>
-                <img alt={"PNG Minha Assinatura"} src={MySign} id="mySign-footer"
-                     data-aos="zoom-out"
-                     data-aos-duration="1000"
-                     data-aos-delay="500">
+                <img alt={"PNG Minha Assinatura"} src={MySign} id="mySign-footer">
                 </img>
-                <p data-aos="zoom-out"
-                   data-aos-duration="1000"
-                   data-aos-delay="700" style={{color: 'white'}}>2025 - Richard Valentim, Full-Stack Dev © All rights reserved.</p>
+                <p style={{color: 'white'}}>2025 - Richard Valentim, Full-Stack Dev © All rights reserved.</p>
             </div>
         </footer>
     )

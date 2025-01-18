@@ -1,6 +1,19 @@
 #main-introduction {
-    width: 100vw;
-    height: 1000px;
+    width: 70vw;
+    height: 750px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#mainText-introduction {
+    font-size: 60px;
+}
+
+#divButtons-introduction {
+    display: flex;
+    flex-direction: row;
 }
 
 #main-introduction::before {
@@ -10,19 +23,107 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
     filter: blur(50px);
     z-index: 1;
 }
 
 #main-introduction > * {
     position: relative;
-    z-index: 2; /* Garante que o conteúdo fique acima do pseudo-elemento */
+    z-index: 2;
 }
 
-#divTextArea-introduction {
-    width: 50vw;
-    height: 79%;
+@media (min-width: 1024px) {
+    #divTextArea-introduction {
+        width: 30vw;
+    }
+
+    #divImage-introduction {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
 }
 
-/*#1b2022*/
+#divImage-introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#divImage-introduction img {
+    filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.5));
+}
+
+@media (max-width: 1200px) {
+    #mainText-introduction {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 1024px){
+
+    #mainText-introduction {
+        font-size: 40px;
+    }
+
+    #divImage-introduction img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 800px){
+    #mainText-introduction {
+        font-size: 40px;
+    }
+
+    #divTextArea-introduction {
+        width: auto;
+        text-align: center;
+    }
+
+    #divImage-introduction {
+        display: none;
+    }
+
+    #divButtons-introduction {
+        justify-content: center;
+    }
+
+    #divImage-introduction img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+    }
+}
+
+@media ( max-width: 650px) {
+    #main-introduction {
+        justify-content: center;
+        text-align: center;
+        width: 70vw;
+    }
+
+    #divButtons-introduction {
+        justify-content: center;
+    }
+
+    #mainText-introduction {
+        font-size: 50px;
+    }
+
+    #divImage-introduction {
+        display: none;
+    }
+}
+
+@media (max-width: 440px) {
+    #mainText-introduction {
+        font-size: 40px;
+    }
+}

@@ -11,6 +11,7 @@ function App() {
         return (
       <div className="App">
           <HomePage/>
+          <Background/>
       </div>
 
   );

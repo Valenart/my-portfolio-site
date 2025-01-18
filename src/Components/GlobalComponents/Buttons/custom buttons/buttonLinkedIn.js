@@ -10,7 +10,7 @@ export default function GithubButton ({text}) {
 
     return (
         <div id="divIntroLinkedIn-button">
-            <button id="buttonIntroLinkedIn-button" onClick={handleOpenWindow} style={{cursor: "pointer"}}>
+            <button id="buttonIntroLinkedIn-button" onClick={handleOpenWindow} style={{cursor: "pointer", marginInline: '5px'}}>
                 {text}
                 <FaLinkedinIn id="iconIntroLinkedIn-button"/>
             </button>

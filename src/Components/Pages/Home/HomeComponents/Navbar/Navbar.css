@@ -13,8 +13,14 @@
     backdrop-filter: blur(5px);
 }
 
+#mylogo-navbar {
+    width: 50px;
+}
+
 #list-navbar {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
 }
 
 li:hover a {
@@ -23,23 +29,40 @@ li:hover a {
     background: none;
 }
 
+
+
 #list-navbar li {
     font-weight: 600;
     margin-inline: 20px;
 }
 
 #divButton-navbar {
-    width: 11vw;
+    width: 150px;
 }
 
 @media (max-width: 1024px) {
 
+    #mylogoNavbar {
+        display: block;
+    }
 
     #divButton-navbar {
-        display: none;
+        display: flex;
+        justify-content: center;
+        width: 150px;
     }
 
     #list-navbar {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    #main-navbar ul li {
+        display: none;
+    }
+
+    #divButton-navbar {
         display: none;
     }
 }

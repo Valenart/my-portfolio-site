@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #000000;
+
     z-index: 0;
 }
 
@@ -249,23 +249,6 @@
     animation: up 0.3s ease-in-out forwards;
 }
 
-
-.contentCard-skills:hover > .divTextCards-skills {
-    animation: up 0.3s ease-in-out forwards;
-}
-
-.contentCard-skills:hover > .lowerTextCard-skills {
-    background-color: #21244A !important;
-}
-
-.contentCard-skills:hover > .lowerTextCard2-skills {
-    background-color: #4a2121 !important;
-}
-
-.contentCard-skills:hover > .lowerTextCard3-skills {
-    background-color: #4a4021 !important;
-}
-
 .lowerTextCard-skills, .lowerTextCard2-skills, .lowerTextCard3-skills {
     padding: 5px 10px;
     border: 1px solid white;
@@ -296,6 +279,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#titleCards-skills {
+    font-size: 50px;
 }
 
 #divLineFlow-skills ul {
@@ -330,6 +317,23 @@
 @media (max-width: 800px) {
     #divLineFlow-skills, #titleLineFlow-skills, #textLineFlow-skills {
         display: none;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #titleCards-skills {
+        text-align: center;
+        width: 80vw;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    #titleCards-skills {
+        text-align: center;
+        width: 80vw;
+        font-size: 30px;
     }
 }
 /**/

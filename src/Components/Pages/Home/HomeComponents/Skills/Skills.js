@@ -7,9 +7,9 @@ import AOS from 'aos';
 
 import Projects from '../Projects/Projects';
 
-import ImageFront from '../../../../../Assets/Images/Skills/pexels-format-380633-1029757.jpg'
-import ImageBack from '../../../../../Assets/Images/Skills/pexels-pixabay-270557.jpg'
-import ImageHobbies from '../../../../../Assets/Images/Skills/pexels-tirachard-kumtanom-112571-574283.jpg'
+import ImageFront from '../../../../../Assets/SVG Icons/Images SVG/Front-End.svg'
+import ImageBack from '../../../../../Assets/SVG Icons/Images SVG/Programming.svg'
+import ImageHobbies from '../../../../../Assets/SVG Icons/Images SVG/Conversation.svg'
 
 import Brazil from '../../../../../Assets/Images/Skills/Flags/brazilFlag.jpg'
 import USA from '../../../../../Assets/Images/Skills/Flags/USAFlag.png'
@@ -53,7 +53,7 @@ export default function Skills() {
 
     return (
         <section id="main-skills">
-            <h1 style={{fontSize:'50px', marginBottom:'50px'}}>As habilidades que <span style={{textDecoration: 'underline'}}>moldam</span> meu trabalho</h1>
+            <h1 id="titleCards-skills">As habilidades que moldam meu trabalho</h1>
 
             <div id="divIntroduction-skills">
 
