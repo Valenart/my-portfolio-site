@@ -6,9 +6,7 @@ import Skills from './HomeComponents/Skills/Skills.js';
 import Certification from "./HomeComponents/Certifications/certificacoes";
 import Networking from "./HomeComponents/Networking/networking";
 import Footer from "./HomeComponents/Footer/footer";
-import ButtonGitHub from "../../GlobalComponents/Buttons/custom buttons/buttonGitHub";
-import ButtonLinkedIn from "../../GlobalComponents/Buttons/custom buttons/buttonLinkedIn";
-
+import SkillsResponsive from '../ResponsiveElements/skillsReponsive'
 /*LIBRARIES REACT IMPORTS*/
 import FramerMotion from "./HomeComponents/Certifications/Scroll Motion/framerMotion";
 import {useEffect, useState} from "react";
@@ -35,6 +33,8 @@ function Home() {
             <Navbar/>
             <Introduction/>
             <Perfil/>
+            <h1 id="titleCards-skillsResponsive">As habilidades que moldam meu trabalho</h1>
+            <SkillsResponsive/>
             <Skills/>
             <Certification/>
             <Networking/>

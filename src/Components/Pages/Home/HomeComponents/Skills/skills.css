@@ -281,6 +281,8 @@
     align-items: center;
 }
 
+
+
 #titleCards-skills {
     font-size: 50px;
     margin-bottom: 50px;
@@ -302,6 +304,11 @@
     font-weight: 600;
 }
 
+#titleLineFlow-skills {
+    font-size: 50px;
+    margin-block: 10px;
+}
+
 #divLineFlow-skills ul li p {
     width: 60%;
     font-size: 14px;
@@ -313,6 +320,19 @@
 #svgLine-skills {
     height: 200px;
     width: clamp(450px, 70vw, 1200px);
+}
+
+@media (max-width: 1024px) {
+    #svgLine-skills {
+        width: clamp(450px, 80vw, 1200px);
+    }
+    #divLineFlow-skills ul {
+        width: clamp(450px, 80vw, 1200px);
+    }
+
+    #titleLineFlow-skills {
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -390,8 +410,12 @@
         flex-wrap: nowrap;
     }
 
+    #titleCards-skills {
+        display: none;
+    }
+
     #divIntroduction-skills {
-        display: flex;
+        display: none;
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;

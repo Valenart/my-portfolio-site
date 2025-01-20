@@ -145,11 +145,13 @@
 
 @media (max-width: 799px) {
     #main-certifications {
-
         width: 96vw;
+        height: auto;
         flex-direction: column;
         text-align: center;
     }
+
+
 
     #containerText-certifications {
         width: 80%;

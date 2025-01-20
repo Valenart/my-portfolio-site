@@ -1,0 +1,360 @@
+#main-skillsResponsive {
+    color: white;
+    width: 90vw;
+    min-height: 50vh;
+    margin-block: 100px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+#gridIntroduction-skillsResponsive {
+    align-items: center;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.divCard-skillsResponsive:nth-child(1) {
+    margin-left: 20px;
+}
+
+.divCard-skillsResponsive:nth-child(2) {
+    margin-right: 20px;
+}
+
+#divCard-skillsResponsive {
+    display: flex;
+    height: 100%;
+    width: 300px;
+    margin: 0 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+}
+
+.contentCard-skillsResponsive {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    height: 95%;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid white;
+    width: 250px;
+    padding: 0 20px;
+    transition: background-color 0.2s ease-in-out, scale 0.2s ease-in-out;
+}
+
+.photoCard-skillsResponsive {
+    width: 80%;
+}
+
+.contentCard-skillsResponsive > * {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.contentCard-skillsResponsive:hover {
+    scale: 1.01;
+    cursor: grab;
+    background-color: #090a15;
+    transition: background-color 0.2s ease-in-out, scale 0.2s ease-in-out;
+
+}
+
+.IconBackgroundCard3-skillsResponsive {
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: 200px;
+    filter: contrast(0.5);
+    animation: rotateCards-out 0.5s ease-in-out forwards;
+    opacity: 1;
+    transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+
+/******************************************/
+/******************************************/
+.IconBackgroundCard2-skillsResponsive {
+    position: absolute;
+    z-index: -1;
+    top: 50px;
+    left: 200px;
+    filter: contrast(0.5);
+    animation: rotateCards-out 0.5s ease-in-out forwards;
+    opacity: 0.2;
+    transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.contentCard-skillsResponsive:hover > .IconBackgroundCard2-skillsResponsive {
+    opacity: 0.3;
+    filter: contrast(1);
+    animation: rotateCards-in 0.5s ease-in-out forwards;
+    transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out ;
+}
+
+#IconBackgroundCard-skillsResponsive, .IconBackgroundCard2-skillsResponsive {
+    user-select: inherit;
+}
+
+/******************************************/
+/******************************************/
+#IconBackgroundCard-skillsResponsive {
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: 120px;
+    filter: contrast(0.5);
+    animation: rotate-out 0.5s ease-in-out forwards;
+    opacity: 0.2;
+    transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+
+.contentCard-skillsResponsive:hover > #IconBackgroundCard-skillsResponsive {
+    opacity: 0.3;
+    filter: contrast(1);
+    animation: rotate-in 0.5s ease-in-out forwards;
+    transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out ;
+}
+
+
+/******************************************/
+/******************************************/
+
+
+
+.divIconsCards-skillsResponsive {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.divIconsCards-skillsResponsive img{
+    margin: 5px;
+    width: 12%;
+}
+
+.divIconsCards-skillsResponsive img{
+    animation: fade-down 0.3s ease-in-out forwards;
+}
+
+.contentCard-skillsResponsive:hover > .divTextCards-skillsResponsive {
+    color: white;
+
+}
+
+.contentCard-skillsResponsive:hover > .divIconsCards-skillsResponsive img {
+    animation:  fade-up 0.3s ease-in-out forwards;
+}
+
+/*****************************************************/
+
+.divIcons2Cards-skillsResponsive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#divCard-skillsResponsive > .photoCard-skillsResponsive {
+    border-radius: 2px;
+    display: flex;
+    width: 80%;
+    object-fit: cover;
+}
+
+
+.divTextCards-skillsResponsive {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.divTextCards-skillsResponsive h4 {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+/**/
+
+
+.photoCard-skillsResponsive,.divTextCards-skillsResponsive {
+    display: flex;
+    animation: down 0.3s ease-in-out forwards;
+}
+
+.contentCard-skillsResponsive:hover > .photoCard-skillsResponsive {
+    animation: up 0.3s ease-in-out forwards;
+}
+
+.lowerTextCard-skillsResponsive, .lowerTextCard2-skillsResponsive, .lowerTextCard3-skillsResponsive {
+    padding: 5px 10px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    margin-block: 20px;
+    font-weight: 600;
+}
+
+.upperTextCard-skillsResponsive {
+    color: #D9D9D9;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/**/
+
+#titleCards-skillsResponsive {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+/**************************************************/
+/*@KEYFRAMES*/
+/**************************************************/
+
+
+
+@keyframes fade-up {
+    0% {
+
+        opacity: 0;
+    }
+    100% {
+
+        opacity: 1;
+    }
+}
+
+@keyframes fade-down {
+    0% {
+
+        opacity: 1;
+    }
+    100% {
+
+        opacity: 0;
+    }
+}
+
+@keyframes rotateCards-in {
+    0% {
+        transform: translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
+    }
+    100% {
+        transform: translateX(-50px) translateY(0px);
+        opacity: 0.4;
+        filter: contrast(1);
+
+    }
+}
+
+@keyframes rotateCards-out {
+    0% {
+        transform: translateX(-50px) translateY(0px);
+        opacity: 0.4;
+        filter: contrast(1);
+
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
+    }
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rotate-in {
+    0% {
+        transform: rotate(-120deg) translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
+    }
+    100% {
+        transform: rotate(0deg) translateX(-50px) translateY(0px);
+        opacity: 0.3;
+        filter: contrast(1);
+
+    }
+}
+
+@keyframes rotate-out {
+    0% {
+        transform: rotate(0deg) translateX(-50px) translateY(0px);
+        opacity: 0.3;
+        filter: contrast(1);
+
+    }
+    100% {
+        transform: rotate(-120deg) translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
+    }
+}
+
+
+
+
+/**************************************************/
+/*@MEDIA*/
+/**************************************************/
+
+@media (min-width: 1024px) {
+    #main-skillsResponsive {
+        display: none;
+    }
+
+
+    #titleCards-skillsResponsive {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    #titleCards-skillsResponsive {
+        font-size: 27px;
+    }
+}
+

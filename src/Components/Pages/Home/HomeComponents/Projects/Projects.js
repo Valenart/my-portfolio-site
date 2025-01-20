@@ -38,14 +38,14 @@ export default function Projects() {
             };
         };
 
-    const [setDados] = useState([]);
+    const [dados , setDados] = useState([]);
     const [porcentagens, setPorcentagens] = useState({});
 
 
 
     useEffect(() => {
         const fetchData = async () => {
-            const token = process.env.REACT_APP_API_KEY;
+            const token = "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";
             const headers = { Authorization: `Bearer ${token}` };
 
             try {
@@ -104,7 +104,7 @@ export default function Projects() {
                 setDados(somatorioLinguagens);
                 setPorcentagens(porcentagensCalculadas);
 
-                console.log("Porcentagens:", porcentagensCalculadas);
+                /*console.log("Porcentagens:", porcentagensCalculadas);*/
             } catch (erro) {
                 console.error("Erro ao buscar dados:", erro);
             }
