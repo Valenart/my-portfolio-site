@@ -48,6 +48,7 @@ export default function Projects() {
             const token = process.env.REACT_APP_API_KEY;
             const headers = { Authorization: `token ${token}` };
 
+
             try {
                 const resposta = await axios.get(
                     'https://api.github.com/users/valenart/repos',
