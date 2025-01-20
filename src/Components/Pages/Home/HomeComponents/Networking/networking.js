@@ -97,7 +97,7 @@ export default function Networking() {
 
                         <div id='photoColumn1-networking'>
 
-                                <img onClick={() => handleOpenPost(0)} alt="Photo on Oracle's Building" src={OraclePhoto2}
+                                <img onClick={() => handleOpenPost(0)} alt="on Oracle's Building" src={OraclePhoto2}
                                      className="normalImage-networking"/>
 
 
@@ -106,7 +106,7 @@ export default function Networking() {
 
 
 
-                                <img onClick={() => handleOpenPost(1)} alt="Photo with DEV's and Leaders Vivo" src={VivoMeet} className="normalImage-networking"/>
+                                <img onClick={() => handleOpenPost(1)} alt="with DEV's and Leaders Vivo" src={VivoMeet} className="normalImage-networking"/>
 
 
 
@@ -114,18 +114,18 @@ export default function Networking() {
                         <div id='photoColumn2-networking'>
 
 
-                                <img onClick={() => handleOpenPost(2)} alt="Photo SENAI group course" src={PowerBISENAI}
+                                <img onClick={() => handleOpenPost(2)} alt="SENAI group course" src={PowerBISENAI}
                                      className="smallImage-networking"/>
 
 
 
 
-                                <img onClick={() => handleOpenPost(1)} alt="Photo in front of Vivo Logo" src={VivoPhotoOnLogo}
+                                <img onClick={() => handleOpenPost(1)} alt="in front of Vivo Logo" src={VivoPhotoOnLogo}
                                      className="normalImage-networking"/>
 
 
 
-                                <img onClick={() => handleOpenPost(0)} alt="Photo on Oracle's Office" src={OraclePhoto1}
+                                <img onClick={() => handleOpenPost(0)} alt="on Oracle's Office" src={OraclePhoto1}
                                      className="smallImage-networking"/>
 
 

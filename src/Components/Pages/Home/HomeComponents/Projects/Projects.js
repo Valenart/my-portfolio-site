@@ -45,8 +45,8 @@ export default function Projects() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const token = "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";
-            const headers = { Authorization: `Bearer ${token}` };
+            const token = process.env.REACT_APP_API_KEY;
+            const headers = { Authorization: `token ${token}` };
 
             try {
                 const resposta = await axios.get(
@@ -104,7 +104,6 @@ export default function Projects() {
                 setDados(somatorioLinguagens);
                 setPorcentagens(porcentagensCalculadas);
 
-                /*console.log("Porcentagens:", porcentagensCalculadas);*/
             } catch (erro) {
                 console.error("Erro ao buscar dados:", erro);
             }

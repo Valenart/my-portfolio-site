@@ -1,3 +1,7 @@
+/********************************************/
+/*GERAL*/
+/********************************************/
+
 #main-introduction {
     width: 70vw;
     height: 750px;
@@ -32,6 +36,21 @@
     z-index: 2;
 }
 
+#divImage-introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#divImage-introduction img {
+    filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.5));
+}
+
+/********************************************/
+/*@MEDIA*/
+/********************************************/
+
 @media (min-width: 1024px) {
     #divTextArea-introduction {
         width: 30vw;
@@ -45,18 +64,8 @@
     }
 }
 
-#divImage-introduction {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#divImage-introduction img {
-    filter: drop-shadow(5px 5px 10px rgba(255, 255, 255, 0.5));
-}
-
 @media (max-width: 1200px) {
+
     #mainText-introduction {
         font-size: 50px;
     }

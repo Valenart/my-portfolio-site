@@ -90,10 +90,8 @@ function Perfil() {
                            data-aos-delay="1500"
                            data-aos-duration="1000"
                            data-aos-easing="ease-out">
-                            Estou focado em aprimorar minhas habilidades e atualmente estudo Kotlin, Git, JavaScript,
-                            React,
-                            Python e
-                            MySQL, com o objetivo de me tornar um profissional Full-stack na área de desenvolvimento de
+                            Estou focado em aprimorar minhas habilidades e atualmente estudo Kotlin e C#,
+                            com o objetivo de me tornar um profissional Full-stack na área de desenvolvimento de
                             software. Além
                             disso, dedico meu tempo ao estudo de idiomas, aperfeiçoando meu inglês e aprendendo francês
                             e

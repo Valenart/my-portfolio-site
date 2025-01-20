@@ -8,12 +8,10 @@ import Networking from "./HomeComponents/Networking/networking";
 import Footer from "./HomeComponents/Footer/footer";
 import SkillsResponsive from '../ResponsiveElements/skillsReponsive'
 /*LIBRARIES REACT IMPORTS*/
-import FramerMotion from "./HomeComponents/Certifications/Scroll Motion/framerMotion";
 import {useEffect, useState} from "react";
 
 /*IMPORT CSS*/
 import './homePage.css';
-import ChartDonut from "../../GlobalComponents/Donut Chart/chartDonut";
 
 
 function Home() {

@@ -7,7 +7,7 @@ import Cisco2Cert from '../../../../../Assets/Png/Certfications/JavaScriptEssent
 import MetaCert from '../../../../../Assets/Png/Certfications/React_Meta.jpeg';
 
 /*IMPORT LOGOS*/
-import AwsLogo from '../../../../../Assets/Png/Icons/AWS-Copia.png';
+import AwsLogo from '../../../../../Assets/Png/Icons/AWS.png';
 import CiscoLogo from '../../../../../Assets/Png/Icons/Cisco.png';
 import MetaLogo from '../../../../../Assets/Png/Icons/Meta.png';
 import FiapLogo from '../../../../../Assets/Png/Icons/Fiap.png';

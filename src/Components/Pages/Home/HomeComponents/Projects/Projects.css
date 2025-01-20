@@ -1,3 +1,6 @@
+/********************************************/
+/*GERAL*/
+/********************************************/
 #main-projects {
     margin: 100px;
     display: flex;
@@ -112,6 +115,15 @@
     animation: up 0.3s ease-in-out forwards;
 }
 
+#buttonGitHubFollow-projects:hover {
+    background-color: #272727;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/********************************************/
+/*@KEYFRAMES*/
+/********************************************/
+
 @keyframes up {
     0% {
         transform: translateY(0);
@@ -130,11 +142,6 @@
     }
 }
 
-#buttonGitHubFollow-projects:hover {
-    background-color: #272727;
-    transition: background-color 0.2s ease-in-out;
-}
-
 /********************************************/
 /*@MEDIA*/
 /********************************************/
@@ -144,7 +151,7 @@
         margin: 100px;
         display: flex;
         width: 65%;
-        border: 1px solid white;
+        border: none;
         align-items: center;
         flex-direction: column;
     }
@@ -160,11 +167,11 @@
 
     #divPerfilGithub-projects {
         margin-block: 20px;
+        width: auto;
         overflow: initial;
     }
 
     #listLanguagesAPI-projects {
-        display: none;
     }
 
     .repsGithub-projects {

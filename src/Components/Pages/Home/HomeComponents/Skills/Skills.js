@@ -44,7 +44,7 @@ export default function Skills() {
         AOS.init({
             once: true,
             offset: 100,
-            threshold: 0.5,
+            threshold: 0.1,
         });
 
         AOS.refresh();
@@ -64,7 +64,7 @@ export default function Skills() {
                             <h4 className="lowerTextCard-skills" style={{display: 'flex', alignItems: "center"}}>
                                 <svg width="20" height="20" viewBox="0 0 25 25" fill="none"
                                      xmlns="http://www.w3.org/2000/svg" style={{marginRight: '10px'}}>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                    <path fillRule="evenodd" clipRule="evenodd"
                                           d="M7.03125 3.125C6.6 3.125 6.25 3.475 6.25 3.90625C6.25 4.33828 6.6 4.6875 7.03125 4.6875C7.4625 4.6875 7.8125 4.33828 7.8125 3.90625C7.8125 3.475 7.4625 3.125 7.03125 3.125ZM10.1562 3.125C9.725 3.125 9.375 3.475 9.375 3.90625C9.375 4.33828 9.725 4.6875 10.1562 4.6875C10.5875 4.6875 10.9375 4.33828 10.9375 3.90625C10.9375 3.475 10.5875 3.125 10.1562 3.125ZM23.4375 6.25H1.5625V3.125C1.5625 2.2625 2.2625 1.5625 3.125 1.5625H21.875C22.7375 1.5625 23.4375 2.2625 23.4375 3.125V6.25ZM23.4375 21.875C23.4375 22.7375 22.7375 23.4375 21.875 23.4375H3.125C2.2625 23.4375 1.5625 22.7375 1.5625 21.875V7.8125H23.4375V21.875ZM21.875 0H3.125C1.39922 0 0 1.39922 0 3.125V21.875C0 23.6008 1.39922 25 3.125 25H21.875C23.6008 25 25 23.6008 25 21.875V3.125C25 1.39922 23.6008 0 21.875 0ZM3.90625 3.125C3.475 3.125 3.125 3.475 3.125 3.90625C3.125 4.33828 3.475 4.6875 3.90625 4.6875C4.3375 4.6875 4.6875 4.33828 4.6875 3.90625C4.6875 3.475 4.3375 3.125 3.90625 3.125Z"
                                           fill="white"/>
                                 </svg>
@@ -185,7 +185,7 @@ export default function Skills() {
             <div id="divLineFlow-skills"
                  data-aos="fade"
                  data-aos-offset="100"
-                 data-aos-delay="400"
+                 data-aos-delay="100"
                  data-aos-duration="1000"
                  data-aos-easing="ease-out">
 
@@ -197,7 +197,7 @@ export default function Skills() {
                                  stroke="white" stroke-width="10"/>
                 </svg>
                 <ul data-aos="fade"
-                    data-aos-delay="2000">
+                    data-aos-delay="500">
 
                     <li>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"

@@ -86,35 +86,7 @@
     transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out ;
 }
 
-@keyframes rotateCards-in {
-    0% {
-        transform: translateX(0px) translateY(0px);
-        opacity: 0.2;
-        filter: contrast(0.5);
 
-    }
-    100% {
-        transform: translateX(-50px) translateY(0px);
-        opacity: 0.4;
-        filter: contrast(1);
-
-    }
-}
-
-@keyframes rotateCards-out {
-    0% {
-        transform: translateX(-50px) translateY(0px);
-        opacity: 0.4;
-        filter: contrast(1);
-
-    }
-    100% {
-        transform: translateX(0px) translateY(0px);
-        opacity: 0.2;
-        filter: contrast(0.5);
-
-    }
-}
 
 /******************************************/
 /******************************************/
@@ -136,35 +108,8 @@
     transition: filter 0.2s ease-in-out, opacity 0.2s ease-in-out ;
 }
 
-@keyframes rotate-in {
-    0% {
-        transform: rotate(-120deg) translateX(0px) translateY(0px);
-        opacity: 0.2;
-        filter: contrast(0.5);
 
-    }
-    100% {
-        transform: rotate(0deg) translateX(-50px) translateY(0px);
-        opacity: 0.3;
-        filter: contrast(1);
 
-    }
-}
-
-@keyframes rotate-out {
-    0% {
-        transform: rotate(0deg) translateX(-50px) translateY(0px);
-        opacity: 0.3;
-        filter: contrast(1);
-
-    }
-    100% {
-        transform: rotate(-120deg) translateX(0px) translateY(0px);
-        opacity: 0.2;
-        filter: contrast(0.5);
-
-    }
-}
 /******************************************/
 /******************************************/
 
@@ -322,42 +267,69 @@
     width: clamp(450px, 70vw, 1200px);
 }
 
-@media (max-width: 1024px) {
-    #svgLine-skills {
-        width: clamp(450px, 80vw, 1200px);
-    }
-    #divLineFlow-skills ul {
-        width: clamp(450px, 80vw, 1200px);
-    }
+/********************************************/
+/*@KEYFRAMES*/
+/********************************************/
 
-    #titleLineFlow-skills {
-        font-size: 30px;
+@keyframes rotateCards-in {
+    0% {
+        transform: translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
+    }
+    100% {
+        transform: translateX(-50px) translateY(0px);
+        opacity: 0.4;
+        filter: contrast(1);
+
     }
 }
 
-@media (max-width: 800px) {
-    #divLineFlow-skills, #titleLineFlow-skills, #textLineFlow-skills {
-        display: none;
-        font-size: 30px;
+@keyframes rotateCards-out {
+    0% {
+        transform: translateX(-50px) translateY(0px);
+        opacity: 0.4;
+        filter: contrast(1);
+
+    }
+    100% {
+        transform: translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
     }
 }
 
-@media (max-width: 1200px) {
-    #titleCards-skills {
-        text-align: center;
-        width: 80vw;
-        font-size: 40px;
+@keyframes rotate-in {
+    0% {
+        transform: rotate(-120deg) translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
+    }
+    100% {
+        transform: rotate(0deg) translateX(-50px) translateY(0px);
+        opacity: 0.3;
+        filter: contrast(1);
+
     }
 }
 
-@media (max-width: 600px) {
-    #titleCards-skills {
-        text-align: center;
-        width: 80vw;
-        font-size: 30px;
+@keyframes rotate-out {
+    0% {
+        transform: rotate(0deg) translateX(-50px) translateY(0px);
+        opacity: 0.3;
+        filter: contrast(1);
+
+    }
+    100% {
+        transform: rotate(-120deg) translateX(0px) translateY(0px);
+        opacity: 0.2;
+        filter: contrast(0.5);
+
     }
 }
-/**/
 
 @keyframes up {
     0% {
@@ -400,6 +372,49 @@
         opacity: 0;
     }
 }
+
+/********************************************/
+/*@MEDIA*/
+/********************************************/
+
+@media (max-width: 1024px) {
+    #svgLine-skills {
+        width: clamp(450px, 80vw, 1200px);
+    }
+    #divLineFlow-skills ul {
+        width: clamp(450px, 80vw, 1200px);
+    }
+
+    #titleLineFlow-skills {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    #divLineFlow-skills, #titleLineFlow-skills, #textLineFlow-skills {
+        display: none;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #titleCards-skills {
+        text-align: center;
+        width: 80vw;
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    #titleCards-skills {
+        text-align: center;
+        width: 80vw;
+        font-size: 30px;
+    }
+}
+/**/
+
+
 
 @media (max-width: 1024px) {
     #main-skills {

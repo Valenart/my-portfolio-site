@@ -35,7 +35,6 @@ export default function SkillsReponsive() {
     const [width, setWidth] = useState(0)
 
     useEffect(() => {
-        console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth);
         setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
     }, []);
 
