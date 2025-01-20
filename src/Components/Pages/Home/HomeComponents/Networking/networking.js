@@ -21,6 +21,15 @@ import './networking.css';
 
 export default function Networking() {
 
+    const linksPosts = [
+        "https://www.linkedin.com/posts/richardvalentim_oracle-inovaaexaeto-tecnologia-activity-7134217622664994816-TKQE?utm_source=share&utm_medium=member_desktop"
+        ,"https://www.linkedin.com/posts/richardvalentim_fundaaexaetotelefaeknicavivo-inovaaexaetotecnolaejgica-activity-7225624648531513344-MSsW?utm_source=share&utm_medium=member_desktop"
+        ,"https://www.linkedin.com/posts/richardvalentim_powerbi-dataanalytics-senai-activity-7101045755632611328-tRkG?utm_source=share&utm_medium=member_desktop"]
+
+    const handleOpenPost = (numlink) => {
+        window.open(`${linksPosts[numlink]}`, "_blank");
+    };
+
     useEffect(() => {
 
         AOS.init({
@@ -87,42 +96,37 @@ export default function Networking() {
                     <div id="photosContainer-networking">
 
                         <div id='photoColumn1-networking'>
-                            {/*https://www.linkedin.com/posts/richardvalentim_oracle-inovaaexaeto-tecnologia-activity-7134217622664994816-TKQE?utm_source=share&utm_medium=member_desktop"*/}
-                                <img alt={"Photo on Oracle's Building"} src={OraclePhoto2}
-                                     className="normalImage-networking">
-                                </img>
+
+                                <img onClick={() => handleOpenPost(0)} alt="Photo on Oracle's Building" src={OraclePhoto2}
+                                     className="normalImage-networking"/>
 
 
-                            {/*"https://www.linkedin.com/posts/richardvalentim_oracle-inovaaexaeto-tecnologia-activity-7134217622664994816-TKQE?utm_source=share&utm_medium=member_desktop"*/}
-                                <img alt={"Casa Oracle Logo"} src={LogoCasaOracle} className="smallImage-networking">
-                                </img>
 
-                            {/*"https://www.linkedin.com/posts/richardvalentim_fundaaexaetotelefaeknicavivo-inovaaexaetotecnolaejgica-activity-7225624648531513344-MSsW?utm_source=share&utm_medium=member_desktop"*/}
+                                <img onClick={() => handleOpenPost(0)} alt="Casa Oracle Logo" src={LogoCasaOracle} className="smallImage-networking"/>
 
-                                <img alt={"Photo with DEV's and Leaders Vivo"} src={VivoMeet}
-                                     className="normalImage-networking">
-                                </img>
+
+
+                                <img onClick={() => handleOpenPost(1)} alt="Photo with DEV's and Leaders Vivo" src={VivoMeet} className="normalImage-networking"/>
+
 
 
                         </div>
                         <div id='photoColumn2-networking'>
 
-                            {/*"https://www.linkedin.com/posts/richardvalentim_powerbi-dataanalytics-senai-activity-7101045755632611328-tRkG?utm_source=share&utm_medium=member_desktop"*/}
-                                <img alt={"Photo SENAI group course"} src={PowerBISENAI}
-                                     className="smallImage-networking">
-                                </img>
+
+                                <img onClick={() => handleOpenPost(2)} alt="Photo SENAI group course" src={PowerBISENAI}
+                                     className="smallImage-networking"/>
 
 
-                            {/*"https://www.linkedin.com/posts/richardvalentim_fundaaexaetotelefaeknicavivo-inovaaexaetotecnolaejgica-activity-7225624648531513344-MSsW?utm_source=share&utm_medium=member_desktop"*/}
-                                <img alt={"Photo in front of Vivo Logo"} src={VivoPhotoOnLogo}
-                                     className="normalImage-networking">
-                                </img>
 
-                            {/*"https://www.linkedin.com/posts/richardvalentim_oracle-inovaaexaeto-tecnologia-activity-7134217622664994816-TKQE?utm_source=share&utm_medium=member_desktop"*/}
-                                    <img alt={"Photo on Oracle's Office"} src={OraclePhoto1}
-                                         className="smallImage-networking">
 
-                                    </img>
+                                <img onClick={() => handleOpenPost(1)} alt="Photo in front of Vivo Logo" src={VivoPhotoOnLogo}
+                                     className="normalImage-networking"/>
+
+
+
+                                <img onClick={() => handleOpenPost(0)} alt="Photo on Oracle's Office" src={OraclePhoto1}
+                                     className="smallImage-networking"/>
 
 
                         </div>

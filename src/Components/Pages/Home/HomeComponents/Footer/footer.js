@@ -5,14 +5,14 @@ import ButtonFooter from "../../../../GlobalComponents/Buttons/custom buttons/bu
 
 
 /*REACT LIBRARIES IMPORTS*/
+import { Link } from 'react-scroll';
+
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { IoLogoGithub } from "react-icons/io5";
-
 import { MdEmail } from "react-icons/md";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-
 import { BsFillTelephoneFill } from "react-icons/bs";
 
 
@@ -22,7 +22,6 @@ import AOS from 'aos';
 import './footer.css'
 import React, {useEffect} from "react";
 import MySign from "../../../../../Assets/Png/MySign/MySignWhite.png";
-import {Link} from "@mui/material";
 
 
 export default function Footer () {
@@ -84,11 +83,11 @@ export default function Footer () {
 
             <div id="containerContact-footer">
                 <ul>
-                    <li><a href="#main-navbar">Home <MdOutlineKeyboardArrowRight/></a></li>
-                    <li><a href="#frame-Perfil">Sobre mim <MdOutlineKeyboardArrowRight/></a></li>
-                    <li><a href="#main-skills">Habilidades <MdOutlineKeyboardArrowRight/></a></li>
-                    <li><a href="#main-certifications">Certificações <MdOutlineKeyboardArrowRight/></a></li>
-                    <li><a href="#main-networking">Networking <MdOutlineKeyboardArrowRight/></a></li>
+                    <li><Link to="main-navbar" smooth={true} duration={500}>Home <MdOutlineKeyboardArrowRight/></Link></li>
+                    <li><Link to="frame-Perfil" smooth={true} duration={500}>Sobre mim <MdOutlineKeyboardArrowRight/></Link></li>
+                    <li><Link to="main-skills" smooth={true} duration={500}>Habilidades <MdOutlineKeyboardArrowRight/></Link></li>
+                    <li><Link to="main-certifications" smooth={true} duration={500}>Certificações <MdOutlineKeyboardArrowRight/></Link></li>
+                    <li><Link to="main-networking" smooth={true} duration={500}>Networking <MdOutlineKeyboardArrowRight/></Link></li>
                 </ul>
                 <img alt={"PNG Minha Assinatura"} src={MySign} id="mySign-footer">
                 </img>

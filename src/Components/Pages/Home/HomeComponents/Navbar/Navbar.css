@@ -37,7 +37,7 @@ li:hover a {
 }
 
 #divButton-navbar {
-    width: 150px;
+    width: clamp(180px, 20vw, 200px);
 }
 
 @media (max-width: 1024px) {
@@ -49,7 +49,7 @@ li:hover a {
     #divButton-navbar {
         display: flex;
         justify-content: center;
-        width: 150px;
+        width: 200px;
     }
 
     #list-navbar {

@@ -57,6 +57,7 @@ html {
 
 #containerContact-footer li {
     margin-block: 5px;
+    cursor: pointer;
     align-items: center;
 }
 

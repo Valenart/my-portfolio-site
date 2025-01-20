@@ -14,27 +14,27 @@ export default function Navbar () {
             <ul
                 id="list-navbar">
                 <li>
-                    <Underline textNavbar="Sobre mim" linkRef="#frame-Perfil"
+                    <Underline textNavbar="Sobre mim" linkRef="frame-Perfil"
                                style={{margin: '200px'}}/>
                 </li>
 
                 <li>
-                    <Underline textNavbar="Habilidades" linkRef="#main-skills"
+                    <Underline textNavbar="Habilidades" linkRef="main-skills"
                                style={{margin: '200px'}}/>
                 </li>
 
                 <li>
-                    <Underline textNavbar="Projetos" linkRef="#main-projects"
+                    <Underline textNavbar="Projetos" linkRef="main-projects"
                                style={{margin: '200px'}}/>
                 </li>
 
                 <li>
-                    <Underline textNavbar="Certificações" linkRef="#main-certifications"
+                    <Underline textNavbar="Certificações" linkRef="main-certifications"
                                style={{margin: '200px'}}/>
                 </li>
 
                 <li>
-                    <Underline textNavbar="Networking" linkRef="#frame-networking"
+                    <Underline textNavbar="Networking" linkRef="frame-networking"
                                style={{margin: '200px'}}/>
                 </li>
             </ul>
