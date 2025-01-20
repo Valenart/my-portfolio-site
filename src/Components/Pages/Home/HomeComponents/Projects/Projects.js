@@ -184,7 +184,7 @@ export default function Projects() {
 
                 <div className="repsGithub-projects">
                     <div className="textRepsGithub-projects">
-                        <a href='https://github.com/Valenart/Mith-Influencers' target="_blank"
+                        <a href='https://github.com/Valenart/jokenpo' target="_blank"
                            rel="noopener noreferrer">jokenpo <MdArrowOutward style={{marginInline:'5px'}}/></a>
                         <p>Meu projeto da Faculdade: Jogo Jokempô usando cliente/servidor!</p>
                     </div>

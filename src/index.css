@@ -1,6 +1,4 @@
-html, body {
-    touch-action: none;
-}
+
 
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
