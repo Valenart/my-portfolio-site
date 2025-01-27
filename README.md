@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# MEU PORTFÓLIO EM REACT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi desenvolvido com o objetivo de criar um portfólio interativo e bem organizado, utilizando React.js como tecnologia principal.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Organização do Projeto
 
-### `npm start`
+A estrutura do projeto foi planejada para ser modular e escalável, facilitando a manutenção e o crescimento do código. Abaixo explico como organizei os arquivos:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Estrutura de Componentes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **`Components`**: Diretório principal para componentes reutilizáveis e globais.
+  - Cada seção do portfólio está organizada em pastas dentro de `Pages/Home/HomeComponents`. Cada uma dessas pastas contém:
+    - Um componente React responsável por implementar a lógica e a interface.
+    - Um arquivo CSS exclusivo para estilização, garantindo que o design seja organizado e coeso.
 
-### `npm test`
+- **`Pages/Home`**: Dentro da pasta `HomeComponents`, encontram-se os seguintes componentes principais:
+  - **Certifications**: Seção que mostra as minhas certificações.
+  - **Footer**: Representa o rodapé do portfólio.
+  - **Introduction**: Apresenta uma introdução sobre mim e sobre o site.
+  - **Navbar**: Barra de navegação do site.
+  - **Networking**: Contém fotos e informações sobre os eventos de Networking que participei.
+  - **Perfil**: Mostra informações pessoais.
+  - **Projects**: Seção dedicada aos meus projetos.
+  - **Skills**: Exibe as minhas habilidades técnicas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **`homePage.js`**: Centraliza a renderização de todos os componentes listados acima, montando a página inicial do portfólio.
+- **`homePage.css`**: Define as regras de estilização globais para a página inicial, garantindo um layout harmonioso.
 
-### `npm run build`
+- **`App.js`**: Este arquivo é o ponto de entrada da aplicação e é responsável por renderizar `homePage.js` como o componente principal.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Benefícios da Organização
+- **Manutenção facilitada**: Cada seção tem seus próprios arquivos de lógica e estilo, permitindo edições sem interferências em outras partes do projeto.
+- **Reutilização**: Componentes bem definidos podem ser usados em outros projetos ou páginas.
+- **Escalabilidade**: Adicionar novas funcionalidades ou seções é simples e eficiente.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Bibliotecas Utilizadas
 
-### `npm run eject`
+Listo abaixo algumas das bibliotecas que utilizei para criar o projeto:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Animações e Transições**
+- `@emotion/react` - Estilização dinâmica e animações baseadas em Emotion.
+- `@emotion/styled` - Estilização com CSS-in-JS para componentes React.
+- `@motionone/utils` - Utilitários para animações no Motion One.
+- `@react-spring/web` - Biblioteca para animações no React baseada em física.
+- `framer-motion` - Criação de animações complexas no React.
+- `motion` - Biblioteca focada em animações modernas no navegador.
+- `aos` - Animações de scroll com efeitos visuais como "fade in".
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **Gráficos e Visualização de Dados**
+- `@mui/x-charts` - Componentes para gráficos baseados no Material-UI.
+- `@syncfusion/ej2-react-charts` - Biblioteca robusta para gráficos e visualização de dados.
+- `chart.js` - Criação de gráficos interativos usando Canvas.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **Estilização de UI e Componentes**
+- `@mui/material` - Biblioteca Material-UI para componentes estilizados no React.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **Requisições HTTP**
+- `axios` - Cliente HTTP popular para realizar requisições REST API.
 
-## Learn More
+### **Otimização e Análises**
+- `@vercel/analytics` - Análise de tráfego para aplicações hospedadas na Vercel.
+- `@vercel/speed-insights` - Insights sobre o desempenho da aplicação.
+- `web-vitals` - Coleta de métricas de desempenho como LCP e FID.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **React (Core e Funcionalidades Adicionais)**
+- `react` - Biblioteca principal para criação de interfaces.
+- `react-dom` - Integração do React com o DOM no navegador.
+- `react-icons` - Pacote de ícones populares para React.
+- `react-modal-image` - Exibição de imagens em modais no React.
+- `react-scripts` - Scripts padrão para projetos React criados com Create React App.
+- `react-scroll` - Animações e manipulação de scroll no React.
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## **Fotos do site**
 
-### Code Splitting
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5e840aa7-6b8c-43c2-a842-ad6b2ecec59b" alt="PhotoSite1" width="300" />
+  <img src="https://github.com/user-attachments/assets/869464c4-bfe0-4a1e-ac68-3ad1c1c0f7fb" alt="PhotoSite2" width="300" />
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Créditos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### **Imagens e Ilustrações**
+Algumas imagens e ilustrações utilizadas no projeto foram obtidas nos seguintes sites, que oferecem recursos gratuitos e de alta qualidade:
+- [Storyset](https://storyset.com/) - Ilustrações customizáveis que enriqueceram o design do portfólio.
+- [Pexels](https://pexels.com) - Banco de imagens gratuito com fotografias de alta resolução.
+- [Unsplash](https://unsplash.com) - Imagens gratuitas de fotógrafos ao redor do mundo.
 
-### Making a Progressive Web App
+### **Background Animado**
+Para o background animado do meu site, utilizei recursos e inspirações do site:
+- [RPJ Animated Backgrounds](https://rpj.bembi.dev/#bubbles) - Uma ferramenta incrível para criar animações de fundo personalizáveis.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Se tiver dúvidas ou sugestões, fique à vontade para contribuir ou entrar em contato!
