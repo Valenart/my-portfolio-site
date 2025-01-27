@@ -1,4 +1,4 @@
-# ESTE PROJETO FOI FEITO EM REACT.JS
+# MEU PORTFÓLIO EM REACT
 
 Este projeto foi desenvolvido com o objetivo de criar um portfólio interativo e bem organizado, utilizando React.js como tecnologia principal.
 
@@ -73,6 +73,14 @@ Listo abaixo algumas das bibliotecas que utilizei para criar o projeto:
 - `react-modal-image` - Exibição de imagens em modais no React.
 - `react-scripts` - Scripts padrão para projetos React criados com Create React App.
 - `react-scroll` - Animações e manipulação de scroll no React.
+---
+
+## **Fotos do site**
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5e840aa7-6b8c-43c2-a842-ad6b2ecec59b" alt="PhotoSite1" width="300" />
+  <img src="https://github.com/user-attachments/assets/869464c4-bfe0-4a1e-ac68-3ad1c1c0f7fb" alt="PhotoSite2" width="300" />
+</div>
 
 ---
 
