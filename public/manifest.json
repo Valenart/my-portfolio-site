@@ -3,17 +3,17 @@
   "name": "Portfólio Richard Valentim da Silva",
   "icons": [
     {
-      "src": "src/Assets/Icons/MyLogoWhite.83efcd7d17335e2f67ae.ico",
+      "src": "/Assets/Icons/MyLogoWhite.83efcd7d17335e2f67ae.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "src/Assets/Icons/MyLogoWhite.83efcd7d17335e2f67ae.ico",
+      "src": "/Assets/Icons/MyLogoWhite.83efcd7d17335e2f67ae.ico",
       "type": "image/x-icon",
       "sizes": "192x192"
     },
     {
-      "src": "src/Assets/Icons/MyLogoWhite.83efcd7d17335e2f67ae.ico",
+      "src": "/Assets/Icons/MyLogoWhite.83efcd7d17335e2f67ae.ico",
       "type": "image/x-icon",
       "sizes": "512x512"
     }

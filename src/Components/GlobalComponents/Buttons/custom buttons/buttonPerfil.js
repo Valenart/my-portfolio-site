@@ -1,7 +1,7 @@
 import React from "react";
 import { FaFileAlt } from "react-icons/fa";
 import "./buttons.css";
-import myResume from "../../../../Assets/PDF/Richard Valentim da Silva.pdf";
+import myResume from "../../../../Assets/PDF/Currículo Novo Richard São Paulo.pdf";
 
 export default function ButtonPerfil({ text = "test" }) {
 
