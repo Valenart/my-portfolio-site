@@ -1,5 +1,5 @@
 import './Projects.css';
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 
 import { IoLogoGithub } from "react-icons/io5";
@@ -28,24 +28,24 @@ export default function Projects() {
         window.open("https://github.com/Valenart", "_blank");
     }
 
-        const getEstilos = (porcentagem) => {
+    const getEstilos = (porcentagem) => {
 
-            return {
-                width: `${porcentagem}%`,
-                height: '8px',
-                backgroundColor: '#08274d',
-                marginBottom: '5px',
-            };
+        return {
+            width: `${porcentagem}%`,
+            height: '8px',
+            backgroundColor: '#08274d',
+            marginBottom: '5px',
         };
+    };
 
-    const [dados , setDados] = useState([]);
+    const [dados, setDados] = useState([]);
     const [porcentagens, setPorcentagens] = useState({});
 
 
 
     useEffect(() => {
         const fetchData = async () => {
-            const token = process.env.REACT_APP_API_KEY;
+            const token = process.env.SECRET_KEY;
             const headers = { Authorization: `token ${token}` };
 
             try {
@@ -117,26 +117,26 @@ export default function Projects() {
         <section id="main-projects">
             <div id="divPerfilGithub-projects">
 
-                <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                     <img src={RichardPhoto} id="photoPerfilGithub-projects" alt="PhotoRichard"></img>
 
-                    <h1 style={{marginBlock: '10px', fontSize: '20px'}}> Richard Valentim da Silva</h1>
-                    <p style={{marginBottom: '10px', color: '#D9D9D9'}}>Valenart · He/Him</p>
+                    <h1 style={{ marginBlock: '10px', fontSize: '20px' }}> Richard Valentim da Silva</h1>
+                    <p style={{ marginBottom: '10px', color: '#D9D9D9' }}>Valenart · He/Him</p>
 
                     <button id="buttonGitHubFollow-projects" onClick={handleOpenWindow}
-                            style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                        <IoLogoGithub fontSize="20px" style={{marginInline: '5px'}}/>Follow
+                        style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <IoLogoGithub fontSize="20px" style={{ marginInline: '5px' }} />Follow
                     </button>
 
-                    <h1 style={{fontWeight: '700', marginTop: '20px'}} id="mainTextPerfilGitHub">· Estatísticas de Linguagens ·</h1>
-                    <h1 style={{fontWeight: '700', marginTop: '20px'}} id="altTextPerfilGitHub">· Conheça meus Projetos ·</h1>
+                    <h1 style={{ fontWeight: '700', marginTop: '20px' }} id="mainTextPerfilGitHub">· Estatísticas de Linguagens ·</h1>
+                    <h1 style={{ fontWeight: '700', marginTop: '20px' }} id="altTextPerfilGitHub">· Conheça meus Projetos ·</h1>
 
                 </div>
 
                 <div>
-                    <h3 style={{fontWeight: '500', fontSize: '14px', color: '#D9D9D9', textAlign: "center"}} id="mainTextPerfilGitHub">Porcentagem
+                    <h3 style={{ fontWeight: '500', fontSize: '14px', color: '#D9D9D9', textAlign: "center" }} id="mainTextPerfilGitHub">Porcentagem
                         das 5 Linguagens que mais uso em meu GitHub:</h3>
-                    <h3 style={{fontWeight: '500', fontSize: '14px', color: '#D9D9D9', textAlign: "center"}} id="altTextPerfilGitHub">Conheça
+                    <h3 style={{ fontWeight: '500', fontSize: '14px', color: '#D9D9D9', textAlign: "center" }} id="altTextPerfilGitHub">Conheça
                         alguns Projetos que estão no GitHub</h3>
                     <ul id="listLanguagesAPI-projects">
                         {Object.entries(porcentagens).map(([lingua, porcentagem]) => (
@@ -155,7 +155,7 @@ export default function Projects() {
                 <div className="repsGithub-projects">
                     <div className="textRepsGithub-projects">
                         <a href='https://github.com/Valenart/Valenart' target="_blank"
-                           rel="noopener noreferrer">Valenart <MdArrowOutward style={{marginInline:'5px'}}/> </a>
+                            rel="noopener noreferrer">Valenart <MdArrowOutward style={{ marginInline: '5px' }} /> </a>
                         <p>Meu README</p>
                     </div>
 
@@ -165,7 +165,7 @@ export default function Projects() {
                 <div className="repsGithub-projects">
                     <div className="textRepsGithub-projects">
                         <a href='https://github.com/Valenart/my-portfolio-site' target="_blank"
-                           rel="noopener noreferrer">my-portfolio-site <MdArrowOutward style={{marginInline:'5px'}}/></a>
+                            rel="noopener noreferrer">my-portfolio-site <MdArrowOutward style={{ marginInline: '5px' }} /></a>
                         <p>Meu site portfólio</p>
                     </div>
 
@@ -175,7 +175,7 @@ export default function Projects() {
                 <div className="repsGithub-projects">
                     <div className="textRepsGithub-projects">
                         <a href='https://github.com/Valenart/Mith-Influencers' target="_blank"
-                           rel="noopener noreferrer">Mith-Influencers <MdArrowOutward style={{marginInline:'5px'}}/></a>
+                            rel="noopener noreferrer">Mith-Influencers <MdArrowOutward style={{ marginInline: '5px' }} /></a>
                         <p>Sites dos influencers da Mith</p>
                     </div>
 
@@ -185,7 +185,7 @@ export default function Projects() {
                 <div className="repsGithub-projects">
                     <div className="textRepsGithub-projects">
                         <a href='https://github.com/Valenart/jokenpo' target="_blank"
-                           rel="noopener noreferrer">jokenpo <MdArrowOutward style={{marginInline:'5px'}}/></a>
+                            rel="noopener noreferrer">jokenpo <MdArrowOutward style={{ marginInline: '5px' }} /></a>
                         <p>Meu projeto da Faculdade: Jogo Jokempô usando cliente/servidor!</p>
                     </div>
 
@@ -194,5 +194,5 @@ export default function Projects() {
 
             </div>
         </section>
-)
+    )
 }
